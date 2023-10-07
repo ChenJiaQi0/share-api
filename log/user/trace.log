@@ -91,3 +91,72 @@
 2023-10-07 10:46:46.510 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
 2023-10-07 10:46:46.510 INFO  top.chen.share.user.config.UserApplication        :23   [32m                  [0;39m 启动成功！！
 2023-10-07 10:46:46.510 INFO  top.chen.share.user.config.UserApplication        :24   [32m                  [0;39m 测试地址：http://127.0.0.1:8001/user-service/hello
+2023-10-07 13:42:26.995 INFO  top.chen.share.user.config.UserApplication        :51   [32m                  [0;39m Starting UserApplication using Java 17.0.4.1 with PID 16304 (D:\program\share-api\share-user\target\classes started by ChenQi in D:\program\share-api)
+2023-10-07 13:42:26.997 INFO  top.chen.share.user.config.UserApplication        :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-10-07 13:42:27.041 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-07 13:42:27.042 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-07 13:42:27.781 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-10-07 13:42:27.788 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2023-10-07 13:42:27.789 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-10-07 13:42:27.789 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-10-07 13:42:27.832 INFO  o.a.c.c.C.[Tomcat].[localhost].[/user-service]    :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-10-07 13:42:27.832 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 789 ms
+2023-10-07 13:42:27.871 INFO  top.chen.share.user.aspect.LogAspect              :33   [32m                  [0;39m logAspect
+2023-10-07 13:42:28.123 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-10-07 13:42:28.131 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2023-10-07 13:42:28.144 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/user-service'
+2023-10-07 13:42:28.149 INFO  top.chen.share.user.config.UserApplication        :57   [32m                  [0;39m Started UserApplication in 1.571 seconds (process running for 2.094)
+2023-10-07 13:42:28.151 INFO  top.chen.share.user.config.UserApplication        :23   [32m                  [0;39m 启动成功！！
+2023-10-07 13:42:28.151 INFO  top.chen.share.user.config.UserApplication        :24   [32m                  [0;39m 测试地址：http://127.0.0.1:8001/user-service/hello
+2023-10-07 13:42:37.797 INFO  o.a.c.c.C.[Tomcat].[localhost].[/user-service]    :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-07 13:42:37.798 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-10-07 13:42:37.799 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 1 ms
+2023-10-07 13:42:37.825 INFO  top.chen.share.user.aspect.LogAspect              :56   [32m1696657357819z8g  [0;39m --------------------开始--------------------
+2023-10-07 13:42:37.826 INFO  top.chen.share.user.aspect.LogAspect              :57   [32m1696657357819z8g  [0;39m 请求地址：http://localhost:8001/user-service/hello GET
+2023-10-07 13:42:37.826 INFO  top.chen.share.user.aspect.LogAspect              :58   [32m1696657357819z8g  [0;39m 类名方法：top.chen.share.user.controller.TestController,hello
+2023-10-07 13:42:37.826 INFO  top.chen.share.user.aspect.LogAspect              :59   [32m1696657357819z8g  [0;39m 远程地址：127.0.0.1
+2023-10-07 13:42:37.864 INFO  top.chen.share.user.aspect.LogAspect              :80   [32m1696657357819z8g  [0;39m 请求参数：[]
+2023-10-07 13:42:37.865 INFO  top.chen.share.user.aspect.LogAspect              :92   [32m1696657357819z8g  [0;39m 返回结果："hello world"
+2023-10-07 13:42:37.865 INFO  top.chen.share.user.aspect.LogAspect              :93   [32m1696657357819z8g  [0;39m --------------------结束 耗时：46 ms --------------------
+2023-10-07 13:47:24.700 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2023-10-07 13:47:24.716 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8001"]
+2023-10-07 13:47:24.716 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-10-07 13:47:24.717 INFO  o.a.c.c.C.[Tomcat].[localhost].[/user-service]    :173  [32m                  [0;39m Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-10-07 13:47:24.723 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8001"]
+2023-10-07 13:47:24.725 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8001"]
+2023-10-07 13:47:24.765 INFO  top.chen.share.user.config.UserApplication        :51   [32m                  [0;39m Starting UserApplication using Java 17.0.4.1 with PID 16304 (D:\program\share-api\share-user\target\classes started by ChenQi in D:\program\share-api)
+2023-10-07 13:47:24.765 INFO  top.chen.share.user.config.UserApplication        :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-10-07 13:47:24.882 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-10-07 13:47:24.883 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2023-10-07 13:47:24.883 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-10-07 13:47:24.883 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-10-07 13:47:24.889 INFO  o.a.c.c.C.[Tomcat].[localhost].[/user-service]    :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-10-07 13:47:24.889 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 123 ms
+2023-10-07 13:47:24.895 INFO  top.chen.share.user.aspect.LogAspect              :33   [32m                  [0;39m logAspect
+2023-10-07 13:47:24.989 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-10-07 13:47:24.992 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2023-10-07 13:47:24.994 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/user-service'
+2023-10-07 13:47:24.996 INFO  top.chen.share.user.config.UserApplication        :57   [32m                  [0;39m Started UserApplication in 0.249 seconds (process running for 298.942)
+2023-10-07 13:47:24.997 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-10-07 13:47:24.997 INFO  top.chen.share.user.config.UserApplication        :23   [32m                  [0;39m 启动成功！！
+2023-10-07 13:47:24.998 INFO  top.chen.share.user.config.UserApplication        :24   [32m                  [0;39m 测试地址：http://127.0.0.1:8001/user-service/hello
+2023-10-07 13:48:17.211 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-10-07 13:48:17.224 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Pausing ProtocolHandler ["http-nio-8001"]
+2023-10-07 13:48:17.224 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-10-07 13:48:17.224 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Stopping ProtocolHandler ["http-nio-8001"]
+2023-10-07 13:48:17.225 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Destroying ProtocolHandler ["http-nio-8001"]
+2023-10-07 13:48:17.262 INFO  top.chen.share.user.config.UserApplication        :51   [32m                  [0;39m Starting UserApplication using Java 17.0.4.1 with PID 16304 (D:\program\share-api\share-user\target\classes started by ChenQi in D:\program\share-api)
+2023-10-07 13:48:17.263 INFO  top.chen.share.user.config.UserApplication        :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-10-07 13:48:17.326 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-10-07 13:48:17.326 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2023-10-07 13:48:17.326 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-10-07 13:48:17.326 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-10-07 13:48:17.338 INFO  o.a.c.c.C.[Tomcat].[localhost].[/user-service]    :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-10-07 13:48:17.338 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 74 ms
+2023-10-07 13:48:17.362 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-10-07 13:48:17.364 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2023-10-07 13:48:17.366 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/user-service'
+2023-10-07 13:48:17.370 INFO  top.chen.share.user.config.UserApplication        :57   [32m                  [0;39m Started UserApplication in 0.121 seconds (process running for 351.315)
+2023-10-07 13:48:17.371 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-10-07 13:48:17.371 INFO  top.chen.share.user.config.UserApplication        :23   [32m                  [0;39m 启动成功！！
+2023-10-07 13:48:17.372 INFO  top.chen.share.user.config.UserApplication        :24   [32m                  [0;39m 测试地址：http://127.0.0.1:8001/user-service/hello

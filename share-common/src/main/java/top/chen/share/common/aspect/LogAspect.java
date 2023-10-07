@@ -1,4 +1,4 @@
-package top.chen.share.user.aspect;
+package top.chen.share.common.aspect;
 
 import cn.hutool.core.util.RandomUtil;
 import com.alibaba.fastjson.JSONObject;
