@@ -191,3 +191,35 @@
 2023-10-07 13:58:15.499 INFO  top.chen.share.common.aspect.LogAspect            :80   [32m16966582954987lj  [0;39m 请求参数：[]
 2023-10-07 13:58:15.499 INFO  top.chen.share.common.aspect.LogAspect            :92   [32m16966582954987lj  [0;39m 返回结果："hello world"
 2023-10-07 13:58:15.499 INFO  top.chen.share.common.aspect.LogAspect            :93   [32m16966582954987lj  [0;39m --------------------结束 耗时：1 ms --------------------
+2023-10-07 14:18:19.818 INFO  top.chen.share.user.config.UserApplication        :51   [32m                  [0;39m Starting UserApplication using Java 17.0.4.1 with PID 13716 (D:\program\share-api\share-user\target\classes started by ChenQi in D:\program\share-api)
+2023-10-07 14:18:19.819 INFO  top.chen.share.user.config.UserApplication        :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-10-07 14:18:20.489 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-10-07 14:18:20.494 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2023-10-07 14:18:20.495 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-10-07 14:18:20.496 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-10-07 14:18:20.544 INFO  o.a.c.c.C.[Tomcat].[localhost].[/user-service]    :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-10-07 14:18:20.544 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 695 ms
+2023-10-07 14:18:20.803 INFO  top.chen.share.common.aspect.LogAspect            :33   [32m                  [0;39m logAspect
+2023-10-07 14:18:21.068 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2023-10-07 14:18:21.079 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/user-service'
+2023-10-07 14:18:21.085 INFO  top.chen.share.user.config.UserApplication        :57   [32m                  [0;39m Started UserApplication in 1.586 seconds (process running for 1.884)
+2023-10-07 14:18:21.086 INFO  top.chen.share.user.config.UserApplication        :25   [32m                  [0;39m 启动成功！！
+2023-10-07 14:18:21.087 INFO  top.chen.share.user.config.UserApplication        :26   [32m                  [0;39m 测试地址：http://127.0.0.1:8001/user-service/hello
+2023-10-07 14:18:24.216 INFO  o.a.c.c.C.[Tomcat].[localhost].[/user-service]    :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-07 14:18:24.217 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-10-07 14:18:24.217 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 0 ms
+2023-10-07 14:18:24.239 INFO  top.chen.share.common.aspect.LogAspect            :56   [32m1696659504235o89  [0;39m --------------------开始--------------------
+2023-10-07 14:18:24.240 INFO  top.chen.share.common.aspect.LogAspect            :57   [32m1696659504235o89  [0;39m 请求地址：http://127.0.0.1:8001/user-service/user/count GET
+2023-10-07 14:18:24.240 INFO  top.chen.share.common.aspect.LogAspect            :58   [32m1696659504235o89  [0;39m 类名方法：top.chen.share.user.controller.UserController,count
+2023-10-07 14:18:24.241 INFO  top.chen.share.common.aspect.LogAspect            :59   [32m1696659504235o89  [0;39m 远程地址：127.0.0.1
+2023-10-07 14:18:24.270 INFO  top.chen.share.common.aspect.LogAspect            :80   [32m1696659504235o89  [0;39m 请求参数：[]
+2023-10-07 14:18:24.291 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m1696659504235o89  [0;39m HikariPool-1 - Starting...
+2023-10-07 14:18:24.558 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m1696659504235o89  [0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@38e5287d
+2023-10-07 14:18:24.559 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m1696659504235o89  [0;39m HikariPool-1 - Start completed.
+2023-10-07 14:18:24.564 DEBUG top.chen.share.user.mapper.UserMapper.selectCount :137  [32m1696659504235o89  [0;39m ==>  Preparing: SELECT COUNT( * ) AS total FROM user
+2023-10-07 14:18:24.577 DEBUG top.chen.share.user.mapper.UserMapper.selectCount :137  [32m1696659504235o89  [0;39m ==> Parameters: 
+2023-10-07 14:18:24.592 DEBUG top.chen.share.user.mapper.UserMapper.selectCount :137  [32m1696659504235o89  [0;39m <==      Total: 1
+2023-10-07 14:18:24.596 INFO  top.chen.share.common.aspect.LogAspect            :92   [32m1696659504235o89  [0;39m 返回结果：2
+2023-10-07 14:18:24.597 INFO  top.chen.share.common.aspect.LogAspect            :93   [32m1696659504235o89  [0;39m --------------------结束 耗时：362 ms --------------------
+2023-10-07 14:27:34.035 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2023-10-07 14:27:34.041 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
