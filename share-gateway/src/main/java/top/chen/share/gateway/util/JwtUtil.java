@@ -1,4 +1,4 @@
-package top.chen.share.common.util;
+package top.chen.share.gateway.util;
 
 import cn.hutool.core.date.DateField;
 import cn.hutool.core.date.DateTime;

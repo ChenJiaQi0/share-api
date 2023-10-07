@@ -10,6 +10,7 @@ Accept: application/json
 
 GET http://localhost:8000/user-service/user/count
 Accept: application/json
+token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTY2NjU5ODAsInBob25lIjoiMTM5NTE5MDUxNzEiLCJpZCI6MSwiZXhwIjoxNjk2NzY1OTgwLCJpYXQiOjE2OTY2NjU5ODB9.nxQUcvgZNmR1c8P3xxuAQvG4kXkH0jmn50tCQEZtcks
 
 ###
 
@@ -26,7 +27,7 @@ POST http://localhost:8000/user-service/user/register
 Content-Type: application/json
 
 {
-  "phone": "13951908888",
+  "phone": "13951907777",
   "password": "8888"
 }
 ###
