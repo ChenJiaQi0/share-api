@@ -402,3 +402,4 @@ top.chen.share.common.exception.BusinessException: null
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-10-07 15:15:00.777 ERROR t.c.s.common.handler.ControllerExceptionHandler   :52   [32m                  [0;39m 校验异常
