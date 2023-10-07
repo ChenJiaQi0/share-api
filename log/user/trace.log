@@ -184,3 +184,10 @@
 2023-10-07 13:49:54.219 INFO  top.chen.share.common.aspect.LogAspect            :80   [32m1696657794183lce  [0;39m 请求参数：[]
 2023-10-07 13:49:54.220 INFO  top.chen.share.common.aspect.LogAspect            :92   [32m1696657794183lce  [0;39m 返回结果："hello world"
 2023-10-07 13:49:54.220 INFO  top.chen.share.common.aspect.LogAspect            :93   [32m1696657794183lce  [0;39m --------------------结束 耗时：37 ms --------------------
+2023-10-07 13:58:15.498 INFO  top.chen.share.common.aspect.LogAspect            :56   [32m16966582954987lj  [0;39m --------------------开始--------------------
+2023-10-07 13:58:15.498 INFO  top.chen.share.common.aspect.LogAspect            :57   [32m16966582954987lj  [0;39m 请求地址：http://127.0.0.1:8001/user-service/hello GET
+2023-10-07 13:58:15.498 INFO  top.chen.share.common.aspect.LogAspect            :58   [32m16966582954987lj  [0;39m 类名方法：top.chen.share.user.controller.TestController,hello
+2023-10-07 13:58:15.498 INFO  top.chen.share.common.aspect.LogAspect            :59   [32m16966582954987lj  [0;39m 远程地址：127.0.0.1
+2023-10-07 13:58:15.499 INFO  top.chen.share.common.aspect.LogAspect            :80   [32m16966582954987lj  [0;39m 请求参数：[]
+2023-10-07 13:58:15.499 INFO  top.chen.share.common.aspect.LogAspect            :92   [32m16966582954987lj  [0;39m 返回结果："hello world"
+2023-10-07 13:58:15.499 INFO  top.chen.share.common.aspect.LogAspect            :93   [32m16966582954987lj  [0;39m --------------------结束 耗时：1 ms --------------------
