@@ -11,3 +11,83 @@
 2023-10-07 10:36:46.675 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
 2023-10-07 10:36:46.676 INFO  top.chen.share.user.config.UserApplication        :23   [32m                  [0;39m 启动成功！！
 2023-10-07 10:36:46.676 INFO  top.chen.share.user.config.UserApplication        :24   [32m                  [0;39m 测试地址：http://127.0.0.1:8001/user-service/hello
+2023-10-07 10:41:25.220 INFO  o.a.c.c.C.[Tomcat].[localhost].[/user-service]    :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-07 10:41:25.220 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-10-07 10:41:25.221 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 1 ms
+2023-10-07 10:44:10.969 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-10-07 10:44:10.991 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-10-07 10:44:10.991 INFO  o.a.c.c.C.[Tomcat].[localhost].[/user-service]    :173  [32m                  [0;39m Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-10-07 10:44:11.052 INFO  top.chen.share.user.config.UserApplication        :51   [32m                  [0;39m Starting UserApplication using Java 17.0.4.1 with PID 20612 (D:\program\share-api\share-user\target\classes started by ChenQi in D:\program\share-api)
+2023-10-07 10:44:11.052 INFO  top.chen.share.user.config.UserApplication        :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-10-07 10:44:11.178 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-10-07 10:44:11.178 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-10-07 10:44:11.178 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-10-07 10:44:11.190 INFO  o.a.c.c.C.[Tomcat].[localhost].[/user-service]    :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-10-07 10:44:11.190 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 133 ms
+2023-10-07 10:44:11.233 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-10-07 10:44:11.245 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/user-service'
+2023-10-07 10:44:11.249 INFO  top.chen.share.user.config.UserApplication        :57   [32m                  [0;39m Started UserApplication in 0.225 seconds (process running for 607.005)
+2023-10-07 10:44:11.251 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-10-07 10:44:11.251 INFO  top.chen.share.user.config.UserApplication        :23   [32m                  [0;39m 启动成功！！
+2023-10-07 10:44:11.251 INFO  top.chen.share.user.config.UserApplication        :24   [32m                  [0;39m 测试地址：http://127.0.0.1:8001/user-service/hello
+2023-10-07 10:45:27.656 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 3 class path changes (0 additions, 3 deletions, 0 modifications)
+2023-10-07 10:45:27.670 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-10-07 10:45:27.708 INFO  top.chen.share.user.config.UserApplication        :51   [32m                  [0;39m Starting UserApplication using Java 17.0.4.1 with PID 20612 (D:\program\share-api\share-user\target\classes started by ChenQi in D:\program\share-api)
+2023-10-07 10:45:27.708 INFO  top.chen.share.user.config.UserApplication        :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-10-07 10:45:27.776 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-10-07 10:45:27.776 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-10-07 10:45:27.777 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-10-07 10:45:27.781 INFO  o.a.c.c.C.[Tomcat].[localhost].[/user-service]    :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-10-07 10:45:27.782 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 73 ms
+2023-10-07 10:45:27.807 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-10-07 10:45:27.812 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/user-service'
+2023-10-07 10:45:27.814 INFO  top.chen.share.user.config.UserApplication        :57   [32m                  [0;39m Started UserApplication in 0.12 seconds (process running for 683.569)
+2023-10-07 10:45:27.815 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-10-07 10:45:27.815 INFO  top.chen.share.user.config.UserApplication        :23   [32m                  [0;39m 启动成功！！
+2023-10-07 10:45:27.815 INFO  top.chen.share.user.config.UserApplication        :24   [32m                  [0;39m 测试地址：http://127.0.0.1:8001/user-service/hello
+2023-10-07 10:45:29.230 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 3 class path changes (3 additions, 0 deletions, 0 modifications)
+2023-10-07 10:45:29.261 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-10-07 10:45:29.297 INFO  top.chen.share.user.config.UserApplication        :51   [32m                  [0;39m Starting UserApplication using Java 17.0.4.1 with PID 20612 (D:\program\share-api\share-user\target\classes started by ChenQi in D:\program\share-api)
+2023-10-07 10:45:29.297 INFO  top.chen.share.user.config.UserApplication        :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-10-07 10:45:29.354 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-10-07 10:45:29.355 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-10-07 10:45:29.355 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-10-07 10:45:29.359 INFO  o.a.c.c.C.[Tomcat].[localhost].[/user-service]    :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-10-07 10:45:29.359 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 61 ms
+2023-10-07 10:45:29.383 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-10-07 10:45:29.386 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/user-service'
+2023-10-07 10:45:29.388 INFO  top.chen.share.user.config.UserApplication        :57   [32m                  [0;39m Started UserApplication in 0.105 seconds (process running for 685.143)
+2023-10-07 10:45:29.389 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-10-07 10:45:29.389 INFO  top.chen.share.user.config.UserApplication        :23   [32m                  [0;39m 启动成功！！
+2023-10-07 10:45:29.389 INFO  top.chen.share.user.config.UserApplication        :24   [32m                  [0;39m 测试地址：http://127.0.0.1:8001/user-service/hello
+2023-10-07 10:46:44.818 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-10-07 10:46:44.832 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-10-07 10:46:44.865 INFO  top.chen.share.user.config.UserApplication        :51   [32m                  [0;39m Starting UserApplication using Java 17.0.4.1 with PID 20612 (D:\program\share-api\share-user\target\classes started by ChenQi in D:\program\share-api)
+2023-10-07 10:46:44.865 INFO  top.chen.share.user.config.UserApplication        :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-10-07 10:46:44.920 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-10-07 10:46:44.921 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-10-07 10:46:44.921 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-10-07 10:46:44.925 INFO  o.a.c.c.C.[Tomcat].[localhost].[/user-service]    :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-10-07 10:46:44.925 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 59 ms
+2023-10-07 10:46:44.949 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-10-07 10:46:44.953 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/user-service'
+2023-10-07 10:46:44.956 INFO  top.chen.share.user.config.UserApplication        :57   [32m                  [0;39m Started UserApplication in 0.103 seconds (process running for 760.711)
+2023-10-07 10:46:44.957 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-10-07 10:46:44.957 INFO  top.chen.share.user.config.UserApplication        :23   [32m                  [0;39m 启动成功！！
+2023-10-07 10:46:44.957 INFO  top.chen.share.user.config.UserApplication        :24   [32m                  [0;39m 测试地址：http://127.0.0.1:8001/user-service/hello
+2023-10-07 10:46:46.374 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-10-07 10:46:46.386 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
+2023-10-07 10:46:46.419 INFO  top.chen.share.user.config.UserApplication        :51   [32m                  [0;39m Starting UserApplication using Java 17.0.4.1 with PID 20612 (D:\program\share-api\share-user\target\classes started by ChenQi in D:\program\share-api)
+2023-10-07 10:46:46.419 INFO  top.chen.share.user.config.UserApplication        :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-10-07 10:46:46.472 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-10-07 10:46:46.473 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-10-07 10:46:46.474 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-10-07 10:46:46.478 INFO  o.a.c.c.C.[Tomcat].[localhost].[/user-service]    :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-10-07 10:46:46.478 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 58 ms
+2023-10-07 10:46:46.480 INFO  top.chen.share.user.aspect.LogAspect              :17   [32m                  [0;39m logAspect
+2023-10-07 10:46:46.498 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-10-07 10:46:46.507 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/user-service'
+2023-10-07 10:46:46.510 INFO  top.chen.share.user.config.UserApplication        :57   [32m                  [0;39m Started UserApplication in 0.101 seconds (process running for 762.264)
+2023-10-07 10:46:46.510 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-10-07 10:46:46.510 INFO  top.chen.share.user.config.UserApplication        :23   [32m                  [0;39m 启动成功！！
+2023-10-07 10:46:46.510 INFO  top.chen.share.user.config.UserApplication        :24   [32m                  [0;39m 测试地址：http://127.0.0.1:8001/user-service/hello
