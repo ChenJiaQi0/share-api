@@ -420,3 +420,102 @@ java.lang.ArithmeticException: / by zero
 2023-10-08 13:59:39.864 INFO  top.chen.share.common.aspect.LogAspect            :79   [32m                  [0;39m 请求参数：[]
 2023-10-08 13:59:39.864 INFO  top.chen.share.common.aspect.LogAspect            :91   [32m                  [0;39m 返回结果："hello world"
 2023-10-08 13:59:39.865 INFO  top.chen.share.common.aspect.LogAspect            :92   [32m                  [0;39m --------------------结束 耗时：35 ms --------------------
+2023-10-08 14:00:32.172 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.0.Final
+2023-10-08 14:00:32.203 INFO  top.chen.share.user.config.UserApplication        :51   [32m                  [0;39m Starting UserApplication using Java 17.0.4.1 with PID 24608 (D:\program\share-api\share-user\target\classes started by ChenQi in D:\program\share-api)
+2023-10-08 14:00:32.204 INFO  top.chen.share.user.config.UserApplication        :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-10-08 14:00:32.920 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-10-08 14:00:32.925 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2023-10-08 14:00:32.927 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-10-08 14:00:32.927 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-10-08 14:00:32.976 INFO  o.a.c.c.C.[Tomcat].[localhost].[/user-service]    :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-10-08 14:00:32.976 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 742 ms
+2023-10-08 14:00:33.233 INFO  top.chen.share.common.aspect.LogAspect            :32   [32m                  [0;39m logAspect
+2023-10-08 14:00:33.498 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2023-10-08 14:00:33.510 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/user-service'
+2023-10-08 14:00:33.515 INFO  top.chen.share.user.config.UserApplication        :57   [32m                  [0;39m Started UserApplication in 1.638 seconds (process running for 1.987)
+2023-10-08 14:00:33.517 INFO  top.chen.share.user.config.UserApplication        :23   [32m                  [0;39m 启动成功！！
+2023-10-08 14:00:33.517 INFO  top.chen.share.user.config.UserApplication        :24   [32m                  [0;39m 测试地址：http://127.0.0.1:8001/user-service/hello
+2023-10-08 14:22:33.708 INFO  top.chen.share.gateway.config.GatewayApplication  :51   [32m                  [0;39m Starting GatewayApplication using Java 17.0.4.1 with PID 11684 (D:\program\share-api\share-gateway\target\classes started by ChenQi in D:\program\share-api)
+2023-10-08 14:22:33.709 INFO  top.chen.share.gateway.config.GatewayApplication  :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-10-08 14:22:33.803 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=622deb4a-5656-3808-a069-a15900cab076
+2023-10-08 14:22:34.049 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [After]
+2023-10-08 14:22:34.049 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Before]
+2023-10-08 14:22:34.050 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Between]
+2023-10-08 14:22:34.050 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Cookie]
+2023-10-08 14:22:34.050 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Header]
+2023-10-08 14:22:34.050 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Host]
+2023-10-08 14:22:34.050 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Method]
+2023-10-08 14:22:34.050 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Path]
+2023-10-08 14:22:34.050 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Query]
+2023-10-08 14:22:34.051 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [ReadBody]
+2023-10-08 14:22:34.051 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [RemoteAddr]
+2023-10-08 14:22:34.051 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2023-10-08 14:22:34.051 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Weight]
+2023-10-08 14:22:34.051 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2023-10-08 14:22:34.070 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-10-08 14:22:34.281 WARN  o.s.b.w.r.c.AnnotationConfigReactiveWebServerApplicationContext:592  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2023-10-08 14:22:36.365 INFO  o.s.b.a.logging.ConditionEvaluationReportLogger   :82   [32m                  [0;39m 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-10-08 14:22:36.375 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40   [32m                  [0;39m 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8001 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8001 or configure this application to listen on another port.
+
+2023-10-08 14:22:49.186 INFO  top.chen.share.gateway.config.GatewayApplication  :51   [32m                  [0;39m Starting GatewayApplication using Java 17.0.4.1 with PID 11684 (D:\program\share-api\share-gateway\target\classes started by ChenQi in D:\program\share-api)
+2023-10-08 14:22:49.186 INFO  top.chen.share.gateway.config.GatewayApplication  :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-10-08 14:22:49.259 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=622deb4a-5656-3808-a069-a15900cab076
+2023-10-08 14:22:49.501 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [After]
+2023-10-08 14:22:49.501 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Before]
+2023-10-08 14:22:49.501 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Between]
+2023-10-08 14:22:49.501 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Cookie]
+2023-10-08 14:22:49.501 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Header]
+2023-10-08 14:22:49.501 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Host]
+2023-10-08 14:22:49.501 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Method]
+2023-10-08 14:22:49.502 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Path]
+2023-10-08 14:22:49.502 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Query]
+2023-10-08 14:22:49.502 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [ReadBody]
+2023-10-08 14:22:49.502 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [RemoteAddr]
+2023-10-08 14:22:49.502 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2023-10-08 14:22:49.502 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Weight]
+2023-10-08 14:22:49.503 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2023-10-08 14:22:49.520 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-10-08 14:22:49.734 INFO  o.s.boot.web.embedded.netty.NettyWebServer        :111  [32m                  [0;39m Netty started on port 8002
+2023-10-08 14:22:50.140 INFO  top.chen.share.gateway.config.GatewayApplication  :57   [32m                  [0;39m Started GatewayApplication in 1.172 seconds (process running for 1555.717)
+2023-10-08 14:22:50.142 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-10-08 14:22:50.142 INFO  top.chen.share.gateway.config.GatewayApplication  :20   [32m                  [0;39m 网关启动成功！！
+2023-10-08 14:22:50.143 INFO  top.chen.share.gateway.config.GatewayApplication  :21   [32m                  [0;39m 网关地址：http://127.0.0.1:8002
+2023-10-08 14:23:04.149 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-10-08 14:23:06.675 INFO  top.chen.share.gateway.config.GatewayApplication  :51   [32m                  [0;39m Starting GatewayApplication using Java 17.0.4.1 with PID 11684 (D:\program\share-api\share-gateway\target\classes started by ChenQi in D:\program\share-api)
+2023-10-08 14:23:06.675 INFO  top.chen.share.gateway.config.GatewayApplication  :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-10-08 14:23:06.806 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=622deb4a-5656-3808-a069-a15900cab076
+2023-10-08 14:23:07.253 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [After]
+2023-10-08 14:23:07.253 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Before]
+2023-10-08 14:23:07.253 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Between]
+2023-10-08 14:23:07.253 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Cookie]
+2023-10-08 14:23:07.253 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Header]
+2023-10-08 14:23:07.253 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Host]
+2023-10-08 14:23:07.254 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Method]
+2023-10-08 14:23:07.255 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Path]
+2023-10-08 14:23:07.255 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Query]
+2023-10-08 14:23:07.255 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [ReadBody]
+2023-10-08 14:23:07.255 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [RemoteAddr]
+2023-10-08 14:23:07.255 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2023-10-08 14:23:07.255 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Weight]
+2023-10-08 14:23:07.256 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2023-10-08 14:23:07.287 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-10-08 14:23:07.678 INFO  o.s.boot.web.embedded.netty.NettyWebServer        :111  [32m                  [0;39m Netty started on port 8002
+2023-10-08 14:23:08.367 INFO  top.chen.share.gateway.config.GatewayApplication  :57   [32m                  [0;39m Started GatewayApplication in 2.06 seconds (process running for 1573.944)
+2023-10-08 14:23:08.369 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-10-08 14:23:08.369 INFO  top.chen.share.gateway.config.GatewayApplication  :20   [32m                  [0;39m 网关启动成功！！
+2023-10-08 14:23:08.369 INFO  top.chen.share.gateway.config.GatewayApplication  :21   [32m                  [0;39m 网关地址：http://127.0.0.1:8002
+2023-10-08 14:34:10.223 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
