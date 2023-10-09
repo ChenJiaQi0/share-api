@@ -1,536 +1,156 @@
-2023-10-08 13:50:31.493 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.0.Final
-2023-10-08 13:50:31.528 INFO  top.chen.share.user.config.UserApplication        :51   [32m                  [0;39m Starting UserApplication using Java 17.0.4.1 with PID 8720 (D:\program\share-api\share-user\target\classes started by ChenQi in D:\program\share-api)
-2023-10-08 13:50:31.528 INFO  top.chen.share.user.config.UserApplication        :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2023-10-08 13:50:32.564 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
-2023-10-08 13:50:32.572 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
-2023-10-08 13:50:32.574 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2023-10-08 13:50:32.574 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
-2023-10-08 13:50:32.635 INFO  o.a.c.c.C.[Tomcat].[localhost].[/user-service]    :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2023-10-08 13:50:32.635 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 1074 ms
-2023-10-08 13:50:32.943 INFO  top.chen.share.common.aspect.LogAspect            :32   [32m                  [0;39m logAspect
-2023-10-08 13:50:33.252 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
-2023-10-08 13:50:33.266 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/user-service'
-2023-10-08 13:50:33.271 INFO  top.chen.share.user.config.UserApplication        :57   [32m                  [0;39m Started UserApplication in 2.191 seconds (process running for 2.656)
-2023-10-08 13:50:33.273 INFO  top.chen.share.user.config.UserApplication        :23   [32m                  [0;39m 启动成功！！
-2023-10-08 13:50:33.273 INFO  top.chen.share.user.config.UserApplication        :24   [32m                  [0;39m 测试地址：http://127.0.0.1:8001/user-service/hello
-2023-10-08 13:50:58.657 INFO  o.a.c.c.C.[Tomcat].[localhost].[/user-service]    :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-10-08 13:50:58.657 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2023-10-08 13:50:58.658 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 1 ms
-2023-10-08 13:50:58.749 INFO  top.chen.share.common.aspect.LogAspect            :55   [32m1696744258743he3  [0;39m --------------------开始--------------------
-2023-10-08 13:50:58.749 INFO  top.chen.share.common.aspect.LogAspect            :56   [32m1696744258743he3  [0;39m 请求地址：http://127.0.0.1:8001/user-service/user/login POST
-2023-10-08 13:50:58.750 INFO  top.chen.share.common.aspect.LogAspect            :57   [32m1696744258743he3  [0;39m 类名方法：top.chen.share.user.controller.UserController,login
-2023-10-08 13:50:58.750 INFO  top.chen.share.common.aspect.LogAspect            :58   [32m1696744258743he3  [0;39m 远程地址：127.0.0.1
-2023-10-08 13:50:58.804 INFO  top.chen.share.common.aspect.LogAspect            :79   [32m1696744258743he3  [0;39m 请求参数：[{}]
-2023-10-08 13:50:58.838 WARN  c.b.m.core.toolkit.support.ReflectLambdaMeta      :41   [32m1696744258743he3  [0;39m Unable to make field private final java.lang.Class java.lang.invoke.SerializedLambda.capturingClass accessible: module java.base does not "opens java.lang.invoke" to unnamed module @3270d194
-2023-10-08 13:50:58.848 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m1696744258743he3  [0;39m HikariPool-1 - Starting...
-2023-10-08 13:50:59.092 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m1696744258743he3  [0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4adc9576
-2023-10-08 13:50:59.094 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m1696744258743he3  [0;39m HikariPool-1 - Start completed.
-2023-10-08 13:50:59.100 DEBUG top.chen.share.user.mapper.UserMapper.selectList  :137  [32m1696744258743he3  [0;39m ==>  Preparing: SELECT id,phone,password,nickname,roles,avatar_url,bonus,create_time,update_time FROM user WHERE (phone = ?)
-2023-10-08 13:50:59.115 DEBUG top.chen.share.user.mapper.UserMapper.selectList  :137  [32m1696744258743he3  [0;39m ==> Parameters: 13951905171(String)
-2023-10-08 13:50:59.161 DEBUG top.chen.share.user.mapper.UserMapper.selectList  :137  [32m1696744258743he3  [0;39m <==      Total: 1
-2023-10-08 13:50:59.210 INFO  top.chen.share.common.util.JwtUtil                :42   [32m1696744258743he3  [0;39m 生成 JWT token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTY3NDQyNTksInBob25lIjoiMTM5NTE5MDUxNzEiLCJpZCI6MSwiZXhwIjoxNjk2OTE3MDU5LCJpYXQiOjE2OTY3NDQyNTl9.QwFCW_apIaPA-JfpW2mWPMSsIPlDcrxxpaApH7cOVbo
-2023-10-08 13:50:59.218 INFO  top.chen.share.common.aspect.LogAspect            :91   [32m1696744258743he3  [0;39m 返回结果：{"data":{"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTY3NDQyNTksInBob25lIjoiMTM5NTE5MDUxNzEiLCJpZCI6MSwiZXhwIjoxNjk2OTE3MDU5LCJpYXQiOjE2OTY3NDQyNTl9.QwFCW_apIaPA-JfpW2mWPMSsIPlDcrxxpaApH7cOVbo","user":{"avatarUrl":"https://i2.100024.xyz/2023/01/26/3e727b.webp","bonus":620,"createTime":1694838230000,"id":1,"nickname":"ccen","roles":"admin","updateTime":1694852630000}},"success":true}
-2023-10-08 13:50:59.218 INFO  top.chen.share.common.aspect.LogAspect            :92   [32m1696744258743he3  [0;39m --------------------结束 耗时：475 ms --------------------
-2023-10-08 13:51:10.620 INFO  top.chen.share.common.aspect.LogAspect            :55   [32m1696744270620wtm  [0;39m --------------------开始--------------------
-2023-10-08 13:51:10.620 INFO  top.chen.share.common.aspect.LogAspect            :56   [32m1696744270620wtm  [0;39m 请求地址：http://127.0.0.1:8001/user-service/user/count GET
-2023-10-08 13:51:10.620 INFO  top.chen.share.common.aspect.LogAspect            :57   [32m1696744270620wtm  [0;39m 类名方法：top.chen.share.user.controller.UserController,count
-2023-10-08 13:51:10.620 INFO  top.chen.share.common.aspect.LogAspect            :58   [32m1696744270620wtm  [0;39m 远程地址：127.0.0.1
-2023-10-08 13:51:10.621 INFO  top.chen.share.common.aspect.LogAspect            :79   [32m1696744270620wtm  [0;39m 请求参数：[]
-2023-10-08 13:51:10.621 DEBUG top.chen.share.user.mapper.UserMapper.selectCount :137  [32m1696744270620wtm  [0;39m ==>  Preparing: SELECT COUNT( * ) AS total FROM user
-2023-10-08 13:51:10.622 DEBUG top.chen.share.user.mapper.UserMapper.selectCount :137  [32m1696744270620wtm  [0;39m ==> Parameters: 
-2023-10-08 13:51:10.626 DEBUG top.chen.share.user.mapper.UserMapper.selectCount :137  [32m1696744270620wtm  [0;39m <==      Total: 1
-2023-10-08 13:51:10.627 INFO  top.chen.share.common.aspect.LogAspect            :91   [32m1696744270620wtm  [0;39m 返回结果：{"data":4,"success":true}
-2023-10-08 13:51:10.627 INFO  top.chen.share.common.aspect.LogAspect            :92   [32m1696744270620wtm  [0;39m --------------------结束 耗时：7 ms --------------------
-2023-10-08 13:51:12.654 INFO  top.chen.share.common.aspect.LogAspect            :55   [32m1696744272654pqw  [0;39m --------------------开始--------------------
-2023-10-08 13:51:12.655 INFO  top.chen.share.common.aspect.LogAspect            :56   [32m1696744272654pqw  [0;39m 请求地址：http://127.0.0.1:8001/user-service/user/count GET
-2023-10-08 13:51:12.655 INFO  top.chen.share.common.aspect.LogAspect            :57   [32m1696744272654pqw  [0;39m 类名方法：top.chen.share.user.controller.UserController,count
-2023-10-08 13:51:12.655 INFO  top.chen.share.common.aspect.LogAspect            :58   [32m1696744272654pqw  [0;39m 远程地址：127.0.0.1
-2023-10-08 13:51:12.655 INFO  top.chen.share.common.aspect.LogAspect            :79   [32m1696744272654pqw  [0;39m 请求参数：[]
-2023-10-08 13:51:12.656 DEBUG top.chen.share.user.mapper.UserMapper.selectCount :137  [32m1696744272654pqw  [0;39m ==>  Preparing: SELECT COUNT( * ) AS total FROM user
-2023-10-08 13:51:12.657 DEBUG top.chen.share.user.mapper.UserMapper.selectCount :137  [32m1696744272654pqw  [0;39m ==> Parameters: 
-2023-10-08 13:51:12.659 DEBUG top.chen.share.user.mapper.UserMapper.selectCount :137  [32m1696744272654pqw  [0;39m <==      Total: 1
-2023-10-08 13:51:12.659 INFO  top.chen.share.common.aspect.LogAspect            :91   [32m1696744272654pqw  [0;39m 返回结果：{"data":4,"success":true}
-2023-10-08 13:51:12.659 INFO  top.chen.share.common.aspect.LogAspect            :92   [32m1696744272654pqw  [0;39m --------------------结束 耗时：5 ms --------------------
-2023-10-08 13:56:51.085 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
-2023-10-08 13:56:51.092 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
-2023-10-08 13:56:52.666 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.0.Final
-2023-10-08 13:56:52.699 INFO  top.chen.share.user.config.UserApplication        :51   [32m                  [0;39m Starting UserApplication using Java 17.0.4.1 with PID 208 (D:\program\share-api\share-user\target\classes started by ChenQi in D:\program\share-api)
-2023-10-08 13:56:52.699 INFO  top.chen.share.user.config.UserApplication        :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2023-10-08 13:56:53.452 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
-2023-10-08 13:56:53.458 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
-2023-10-08 13:56:53.459 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2023-10-08 13:56:53.459 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
-2023-10-08 13:56:53.516 INFO  o.a.c.c.C.[Tomcat].[localhost].[/user-service]    :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2023-10-08 13:56:53.517 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 788 ms
-2023-10-08 13:56:53.794 INFO  top.chen.share.common.aspect.LogAspect            :32   [32m                  [0;39m logAspect
-2023-10-08 13:56:54.084 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
-2023-10-08 13:56:54.095 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/user-service'
-2023-10-08 13:56:54.101 INFO  top.chen.share.user.config.UserApplication        :57   [32m                  [0;39m Started UserApplication in 1.763 seconds (process running for 2.117)
-2023-10-08 13:56:54.103 INFO  top.chen.share.user.config.UserApplication        :23   [32m                  [0;39m 启动成功！！
-2023-10-08 13:56:54.104 INFO  top.chen.share.user.config.UserApplication        :24   [32m                  [0;39m 测试地址：http://127.0.0.1:8001/user-service/hello
-2023-10-08 13:57:16.248 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.0.Final
-2023-10-08 13:57:16.276 INFO  top.chen.share.user.config.UserApplication        :51   [32m                  [0;39m Starting UserApplication using Java 17.0.4.1 with PID 23236 (D:\program\share-api\share-user\target\classes started by ChenQi in D:\program\share-api)
-2023-10-08 13:57:16.276 INFO  top.chen.share.user.config.UserApplication        :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2023-10-08 13:57:16.992 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
-2023-10-08 13:57:16.997 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
-2023-10-08 13:57:16.998 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2023-10-08 13:57:16.998 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
-2023-10-08 13:57:17.049 INFO  o.a.c.c.C.[Tomcat].[localhost].[/user-service]    :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2023-10-08 13:57:17.049 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 743 ms
-2023-10-08 13:57:17.083 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:592  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'springMvcConfig': Injection of resource dependencies failed
-2023-10-08 13:57:17.086 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Stopping service [Tomcat]
-2023-10-08 13:57:17.095 INFO  o.s.b.a.logging.ConditionEvaluationReportLogger   :82   [32m                  [0;39m 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2023-10-08 13:57:17.110 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40   [32m                  [0;39m 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-A component required a bean of type 'top.chen.share.common.interceptor.LogInterceptor' that could not be found.
-
-
-Action:
-
-Consider defining a bean of type 'top.chen.share.common.interceptor.LogInterceptor' in your configuration.
-
-2023-10-08 13:57:43.934 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.0.Final
-2023-10-08 13:57:43.963 INFO  top.chen.share.user.config.UserApplication        :51   [32m                  [0;39m Starting UserApplication using Java 17.0.4.1 with PID 6564 (D:\program\share-api\share-user\target\classes started by ChenQi in D:\program\share-api)
-2023-10-08 13:57:43.964 INFO  top.chen.share.user.config.UserApplication        :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2023-10-08 13:57:44.677 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
-2023-10-08 13:57:44.685 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
-2023-10-08 13:57:44.686 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2023-10-08 13:57:44.686 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
-2023-10-08 13:57:44.738 INFO  o.a.c.c.C.[Tomcat].[localhost].[/user-service]    :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2023-10-08 13:57:44.738 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 744 ms
-2023-10-08 13:57:44.997 INFO  top.chen.share.common.aspect.LogAspect            :32   [32m                  [0;39m logAspect
-2023-10-08 13:57:45.268 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
-2023-10-08 13:57:45.280 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/user-service'
-2023-10-08 13:57:45.286 INFO  top.chen.share.user.config.UserApplication        :57   [32m                  [0;39m Started UserApplication in 1.649 seconds (process running for 1.956)
-2023-10-08 13:57:45.288 INFO  top.chen.share.user.config.UserApplication        :23   [32m                  [0;39m 启动成功！！
-2023-10-08 13:57:45.288 INFO  top.chen.share.user.config.UserApplication        :24   [32m                  [0;39m 测试地址：http://127.0.0.1:8001/user-service/hello
-2023-10-08 13:57:53.144 INFO  o.a.c.c.C.[Tomcat].[localhost].[/user-service]    :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-10-08 13:57:53.144 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2023-10-08 13:57:53.145 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 1 ms
-2023-10-08 13:57:53.169 INFO  top.chen.share.common.aspect.LogAspect            :55   [32m1696744673158ym8  [0;39m --------------------开始--------------------
-2023-10-08 13:57:53.169 INFO  top.chen.share.common.aspect.LogAspect            :56   [32m1696744673158ym8  [0;39m 请求地址：http://127.0.0.1:8001/user-service/hello GET
-2023-10-08 13:57:53.169 INFO  top.chen.share.common.aspect.LogAspect            :57   [32m1696744673158ym8  [0;39m 类名方法：top.chen.share.user.controller.TestController,hello
-2023-10-08 13:57:53.169 INFO  top.chen.share.common.aspect.LogAspect            :58   [32m1696744673158ym8  [0;39m 远程地址：127.0.0.1
-2023-10-08 13:57:53.201 INFO  top.chen.share.common.aspect.LogAspect            :79   [32m1696744673158ym8  [0;39m 请求参数：[]
-2023-10-08 13:57:53.202 ERROR t.c.s.common.handler.ControllerExceptionHandler   :22   [32m1696744673158ym8  [0;39m 系统异常
-java.lang.ArithmeticException: / by zero
-	at top.chen.share.user.controller.TestController.hello(TestController.java:14)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
-	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
-	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
-	at top.chen.share.common.aspect.LogAspect.doAround(LogAspect.java:85)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:633)
-	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:623)
-	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:703)
-	at top.chen.share.user.controller.TestController$$SpringCGLIB$$0.hello(<generated>)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1080)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:973)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:705)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-2023-10-08 13:58:11.967 INFO  top.chen.share.common.aspect.LogAspect            :55   [32m1696744691967frw  [0;39m --------------------开始--------------------
-2023-10-08 13:58:11.968 INFO  top.chen.share.common.aspect.LogAspect            :56   [32m1696744691967frw  [0;39m 请求地址：http://127.0.0.1:8001/user-service/hello GET
-2023-10-08 13:58:11.969 INFO  top.chen.share.common.aspect.LogAspect            :57   [32m1696744691967frw  [0;39m 类名方法：top.chen.share.user.controller.TestController,hello
-2023-10-08 13:58:11.970 INFO  top.chen.share.common.aspect.LogAspect            :58   [32m1696744691967frw  [0;39m 远程地址：127.0.0.1
-2023-10-08 13:58:11.970 INFO  top.chen.share.common.aspect.LogAspect            :79   [32m1696744691967frw  [0;39m 请求参数：[]
-2023-10-08 13:58:11.970 ERROR t.c.s.common.handler.ControllerExceptionHandler   :22   [32m1696744691967frw  [0;39m 系统异常
-java.lang.ArithmeticException: / by zero
-	at top.chen.share.user.controller.TestController.hello(TestController.java:14)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
-	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
-	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
-	at top.chen.share.common.aspect.LogAspect.doAround(LogAspect.java:85)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:633)
-	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:623)
-	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:703)
-	at top.chen.share.user.controller.TestController$$SpringCGLIB$$0.hello(<generated>)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1080)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:973)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:705)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-2023-10-08 13:58:14.643 INFO  top.chen.share.common.aspect.LogAspect            :55   [32m16967446946439r3  [0;39m --------------------开始--------------------
-2023-10-08 13:58:14.644 INFO  top.chen.share.common.aspect.LogAspect            :56   [32m16967446946439r3  [0;39m 请求地址：http://127.0.0.1:8001/user-service/hello GET
-2023-10-08 13:58:14.644 INFO  top.chen.share.common.aspect.LogAspect            :57   [32m16967446946439r3  [0;39m 类名方法：top.chen.share.user.controller.TestController,hello
-2023-10-08 13:58:14.644 INFO  top.chen.share.common.aspect.LogAspect            :58   [32m16967446946439r3  [0;39m 远程地址：127.0.0.1
-2023-10-08 13:58:14.645 INFO  top.chen.share.common.aspect.LogAspect            :79   [32m16967446946439r3  [0;39m 请求参数：[]
-2023-10-08 13:58:14.645 ERROR t.c.s.common.handler.ControllerExceptionHandler   :22   [32m16967446946439r3  [0;39m 系统异常
-java.lang.ArithmeticException: / by zero
-	at top.chen.share.user.controller.TestController.hello(TestController.java:14)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:343)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
-	at org.springframework.aop.framework.adapter.MethodBeforeAdviceInterceptor.invoke(MethodBeforeAdviceInterceptor.java:58)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
-	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:89)
-	at top.chen.share.common.aspect.LogAspect.doAround(LogAspect.java:85)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:633)
-	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:623)
-	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:71)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
-	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97)
-	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
-	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:752)
-	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:703)
-	at top.chen.share.user.controller.TestController$$SpringCGLIB$$0.hello(<generated>)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:207)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:152)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1080)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:973)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:705)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
-	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:814)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:223)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
-	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185)
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158)
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177)
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119)
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400)
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859)
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734)
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
-	at java.base/java.lang.Thread.run(Thread.java:833)
-2023-10-08 13:58:20.565 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.0.Final
-2023-10-08 13:58:20.592 INFO  top.chen.share.user.config.UserApplication        :51   [32m                  [0;39m Starting UserApplication using Java 17.0.4.1 with PID 16628 (D:\program\share-api\share-user\target\classes started by ChenQi in D:\program\share-api)
-2023-10-08 13:58:20.593 INFO  top.chen.share.user.config.UserApplication        :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2023-10-08 13:58:21.326 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
-2023-10-08 13:58:21.332 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
-2023-10-08 13:58:21.333 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2023-10-08 13:58:21.336 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
-2023-10-08 13:58:21.394 INFO  o.a.c.c.C.[Tomcat].[localhost].[/user-service]    :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2023-10-08 13:58:21.395 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 770 ms
-2023-10-08 13:58:21.657 INFO  top.chen.share.common.aspect.LogAspect            :32   [32m                  [0;39m logAspect
-2023-10-08 13:58:21.932 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
-2023-10-08 13:58:21.944 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/user-service'
-2023-10-08 13:58:21.950 INFO  top.chen.share.user.config.UserApplication        :57   [32m                  [0;39m Started UserApplication in 1.674 seconds (process running for 2.003)
-2023-10-08 13:58:21.951 INFO  top.chen.share.user.config.UserApplication        :23   [32m                  [0;39m 启动成功！！
-2023-10-08 13:58:21.951 INFO  top.chen.share.user.config.UserApplication        :24   [32m                  [0;39m 测试地址：http://127.0.0.1:8001/user-service/hello
-2023-10-08 13:58:24.684 INFO  o.a.c.c.C.[Tomcat].[localhost].[/user-service]    :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-10-08 13:58:24.684 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2023-10-08 13:58:24.685 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 1 ms
-2023-10-08 13:58:24.707 INFO  top.chen.share.common.aspect.LogAspect            :55   [32m1696744704697yvd  [0;39m --------------------开始--------------------
-2023-10-08 13:58:24.707 INFO  top.chen.share.common.aspect.LogAspect            :56   [32m1696744704697yvd  [0;39m 请求地址：http://127.0.0.1:8001/user-service/hello GET
-2023-10-08 13:58:24.708 INFO  top.chen.share.common.aspect.LogAspect            :57   [32m1696744704697yvd  [0;39m 类名方法：top.chen.share.user.controller.TestController,hello
-2023-10-08 13:58:24.709 INFO  top.chen.share.common.aspect.LogAspect            :58   [32m1696744704697yvd  [0;39m 远程地址：127.0.0.1
-2023-10-08 13:58:24.741 INFO  top.chen.share.common.aspect.LogAspect            :79   [32m1696744704697yvd  [0;39m 请求参数：[]
-2023-10-08 13:58:24.741 INFO  top.chen.share.common.aspect.LogAspect            :91   [32m1696744704697yvd  [0;39m 返回结果："hello world"
-2023-10-08 13:58:24.741 INFO  top.chen.share.common.aspect.LogAspect            :92   [32m1696744704697yvd  [0;39m --------------------结束 耗时：35 ms --------------------
-2023-10-08 13:59:31.250 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.0.Final
-2023-10-08 13:59:31.278 INFO  top.chen.share.user.config.UserApplication        :51   [32m                  [0;39m Starting UserApplication using Java 17.0.4.1 with PID 24352 (D:\program\share-api\share-user\target\classes started by ChenQi in D:\program\share-api)
-2023-10-08 13:59:31.279 INFO  top.chen.share.user.config.UserApplication        :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2023-10-08 13:59:31.992 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
-2023-10-08 13:59:31.998 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
-2023-10-08 13:59:32.001 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2023-10-08 13:59:32.001 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
-2023-10-08 13:59:32.050 INFO  o.a.c.c.C.[Tomcat].[localhost].[/user-service]    :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2023-10-08 13:59:32.051 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 743 ms
-2023-10-08 13:59:32.298 INFO  top.chen.share.common.aspect.LogAspect            :32   [32m                  [0;39m logAspect
-2023-10-08 13:59:32.559 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
-2023-10-08 13:59:32.572 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/user-service'
-2023-10-08 13:59:32.578 INFO  top.chen.share.user.config.UserApplication        :57   [32m                  [0;39m Started UserApplication in 1.61 seconds (process running for 1.968)
-2023-10-08 13:59:32.579 INFO  top.chen.share.user.config.UserApplication        :23   [32m                  [0;39m 启动成功！！
-2023-10-08 13:59:32.579 INFO  top.chen.share.user.config.UserApplication        :24   [32m                  [0;39m 测试地址：http://127.0.0.1:8001/user-service/hello
-2023-10-08 13:59:39.813 INFO  o.a.c.c.C.[Tomcat].[localhost].[/user-service]    :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-10-08 13:59:39.813 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
-2023-10-08 13:59:39.813 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 0 ms
-2023-10-08 13:59:39.832 INFO  top.chen.share.common.aspect.LogAspect            :55   [32m                  [0;39m --------------------开始--------------------
-2023-10-08 13:59:39.832 INFO  top.chen.share.common.aspect.LogAspect            :56   [32m                  [0;39m 请求地址：http://127.0.0.1:8001/user-service/hello GET
-2023-10-08 13:59:39.833 INFO  top.chen.share.common.aspect.LogAspect            :57   [32m                  [0;39m 类名方法：top.chen.share.user.controller.TestController,hello
-2023-10-08 13:59:39.833 INFO  top.chen.share.common.aspect.LogAspect            :58   [32m                  [0;39m 远程地址：127.0.0.1
-2023-10-08 13:59:39.864 INFO  top.chen.share.common.aspect.LogAspect            :79   [32m                  [0;39m 请求参数：[]
-2023-10-08 13:59:39.864 INFO  top.chen.share.common.aspect.LogAspect            :91   [32m                  [0;39m 返回结果："hello world"
-2023-10-08 13:59:39.865 INFO  top.chen.share.common.aspect.LogAspect            :92   [32m                  [0;39m --------------------结束 耗时：35 ms --------------------
-2023-10-08 14:00:32.172 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.0.Final
-2023-10-08 14:00:32.203 INFO  top.chen.share.user.config.UserApplication        :51   [32m                  [0;39m Starting UserApplication using Java 17.0.4.1 with PID 24608 (D:\program\share-api\share-user\target\classes started by ChenQi in D:\program\share-api)
-2023-10-08 14:00:32.204 INFO  top.chen.share.user.config.UserApplication        :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2023-10-08 14:00:32.920 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
-2023-10-08 14:00:32.925 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
-2023-10-08 14:00:32.927 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2023-10-08 14:00:32.927 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
-2023-10-08 14:00:32.976 INFO  o.a.c.c.C.[Tomcat].[localhost].[/user-service]    :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2023-10-08 14:00:32.976 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 742 ms
-2023-10-08 14:00:33.233 INFO  top.chen.share.common.aspect.LogAspect            :32   [32m                  [0;39m logAspect
-2023-10-08 14:00:33.498 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
-2023-10-08 14:00:33.510 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/user-service'
-2023-10-08 14:00:33.515 INFO  top.chen.share.user.config.UserApplication        :57   [32m                  [0;39m Started UserApplication in 1.638 seconds (process running for 1.987)
-2023-10-08 14:00:33.517 INFO  top.chen.share.user.config.UserApplication        :23   [32m                  [0;39m 启动成功！！
-2023-10-08 14:00:33.517 INFO  top.chen.share.user.config.UserApplication        :24   [32m                  [0;39m 测试地址：http://127.0.0.1:8001/user-service/hello
-2023-10-08 14:22:33.708 INFO  top.chen.share.gateway.config.GatewayApplication  :51   [32m                  [0;39m Starting GatewayApplication using Java 17.0.4.1 with PID 11684 (D:\program\share-api\share-gateway\target\classes started by ChenQi in D:\program\share-api)
-2023-10-08 14:22:33.709 INFO  top.chen.share.gateway.config.GatewayApplication  :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2023-10-08 14:22:33.803 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=622deb4a-5656-3808-a069-a15900cab076
-2023-10-08 14:22:34.049 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [After]
-2023-10-08 14:22:34.049 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Before]
-2023-10-08 14:22:34.050 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Between]
-2023-10-08 14:22:34.050 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Cookie]
-2023-10-08 14:22:34.050 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Header]
-2023-10-08 14:22:34.050 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Host]
-2023-10-08 14:22:34.050 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Method]
-2023-10-08 14:22:34.050 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Path]
-2023-10-08 14:22:34.050 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Query]
-2023-10-08 14:22:34.051 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [ReadBody]
-2023-10-08 14:22:34.051 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [RemoteAddr]
-2023-10-08 14:22:34.051 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [XForwardedRemoteAddr]
-2023-10-08 14:22:34.051 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Weight]
-2023-10-08 14:22:34.051 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [CloudFoundryRouteService]
-2023-10-08 14:22:34.070 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
-2023-10-08 14:22:34.281 WARN  o.s.b.w.r.c.AnnotationConfigReactiveWebServerApplicationContext:592  [32m                  [0;39m Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
-2023-10-08 14:22:36.365 INFO  o.s.b.a.logging.ConditionEvaluationReportLogger   :82   [32m                  [0;39m 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2023-10-08 14:22:36.375 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40   [32m                  [0;39m 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Web server failed to start. Port 8001 was already in use.
-
-Action:
-
-Identify and stop the process that's listening on port 8001 or configure this application to listen on another port.
-
-2023-10-08 14:22:49.186 INFO  top.chen.share.gateway.config.GatewayApplication  :51   [32m                  [0;39m Starting GatewayApplication using Java 17.0.4.1 with PID 11684 (D:\program\share-api\share-gateway\target\classes started by ChenQi in D:\program\share-api)
-2023-10-08 14:22:49.186 INFO  top.chen.share.gateway.config.GatewayApplication  :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2023-10-08 14:22:49.259 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=622deb4a-5656-3808-a069-a15900cab076
-2023-10-08 14:22:49.501 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [After]
-2023-10-08 14:22:49.501 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Before]
-2023-10-08 14:22:49.501 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Between]
-2023-10-08 14:22:49.501 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Cookie]
-2023-10-08 14:22:49.501 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Header]
-2023-10-08 14:22:49.501 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Host]
-2023-10-08 14:22:49.501 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Method]
-2023-10-08 14:22:49.502 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Path]
-2023-10-08 14:22:49.502 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Query]
-2023-10-08 14:22:49.502 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [ReadBody]
-2023-10-08 14:22:49.502 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [RemoteAddr]
-2023-10-08 14:22:49.502 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [XForwardedRemoteAddr]
-2023-10-08 14:22:49.502 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Weight]
-2023-10-08 14:22:49.503 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [CloudFoundryRouteService]
-2023-10-08 14:22:49.520 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
-2023-10-08 14:22:49.734 INFO  o.s.boot.web.embedded.netty.NettyWebServer        :111  [32m                  [0;39m Netty started on port 8002
-2023-10-08 14:22:50.140 INFO  top.chen.share.gateway.config.GatewayApplication  :57   [32m                  [0;39m Started GatewayApplication in 1.172 seconds (process running for 1555.717)
-2023-10-08 14:22:50.142 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
-2023-10-08 14:22:50.142 INFO  top.chen.share.gateway.config.GatewayApplication  :20   [32m                  [0;39m 网关启动成功！！
-2023-10-08 14:22:50.143 INFO  top.chen.share.gateway.config.GatewayApplication  :21   [32m                  [0;39m 网关地址：http://127.0.0.1:8002
-2023-10-08 14:23:04.149 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2023-10-08 14:23:06.675 INFO  top.chen.share.gateway.config.GatewayApplication  :51   [32m                  [0;39m Starting GatewayApplication using Java 17.0.4.1 with PID 11684 (D:\program\share-api\share-gateway\target\classes started by ChenQi in D:\program\share-api)
-2023-10-08 14:23:06.675 INFO  top.chen.share.gateway.config.GatewayApplication  :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2023-10-08 14:23:06.806 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=622deb4a-5656-3808-a069-a15900cab076
-2023-10-08 14:23:07.253 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [After]
-2023-10-08 14:23:07.253 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Before]
-2023-10-08 14:23:07.253 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Between]
-2023-10-08 14:23:07.253 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Cookie]
-2023-10-08 14:23:07.253 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Header]
-2023-10-08 14:23:07.253 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Host]
-2023-10-08 14:23:07.254 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Method]
-2023-10-08 14:23:07.255 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Path]
-2023-10-08 14:23:07.255 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Query]
-2023-10-08 14:23:07.255 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [ReadBody]
-2023-10-08 14:23:07.255 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [RemoteAddr]
-2023-10-08 14:23:07.255 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [XForwardedRemoteAddr]
-2023-10-08 14:23:07.255 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Weight]
-2023-10-08 14:23:07.256 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [CloudFoundryRouteService]
-2023-10-08 14:23:07.287 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
-2023-10-08 14:23:07.678 INFO  o.s.boot.web.embedded.netty.NettyWebServer        :111  [32m                  [0;39m Netty started on port 8002
-2023-10-08 14:23:08.367 INFO  top.chen.share.gateway.config.GatewayApplication  :57   [32m                  [0;39m Started GatewayApplication in 2.06 seconds (process running for 1573.944)
-2023-10-08 14:23:08.369 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
-2023-10-08 14:23:08.369 INFO  top.chen.share.gateway.config.GatewayApplication  :20   [32m                  [0;39m 网关启动成功！！
-2023-10-08 14:23:08.369 INFO  top.chen.share.gateway.config.GatewayApplication  :21   [32m                  [0;39m 网关地址：http://127.0.0.1:8002
-2023-10-08 14:34:10.223 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2023-10-08 14:41:04.829 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.0.Final
-2023-10-08 14:41:04.856 INFO  top.chen.share.user.config.UserApplication        :51   [32m                  [0;39m Starting UserApplication using Java 17.0.4.1 with PID 11576 (D:\program\share-api\share-user\target\classes started by ChenQi in D:\program\share-api)
-2023-10-08 14:41:04.857 INFO  top.chen.share.user.config.UserApplication        :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2023-10-08 14:41:05.603 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
-2023-10-08 14:41:05.609 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
-2023-10-08 14:41:05.611 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
-2023-10-08 14:41:05.611 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
-2023-10-08 14:41:05.664 INFO  o.a.c.c.C.[Tomcat].[localhost].[/user-service]    :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
-2023-10-08 14:41:05.665 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 778 ms
-2023-10-08 14:41:05.913 INFO  top.chen.share.common.aspect.LogAspect            :32   [32m                  [0;39m logAspect
-2023-10-08 14:41:06.219 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
-2023-10-08 14:41:06.232 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/user-service'
-2023-10-08 14:41:06.238 INFO  top.chen.share.user.config.UserApplication        :57   [32m                  [0;39m Started UserApplication in 1.701 seconds (process running for 2.069)
-2023-10-08 14:41:06.239 INFO  top.chen.share.user.config.UserApplication        :23   [32m                  [0;39m 启动成功！！
-2023-10-08 14:41:06.239 INFO  top.chen.share.user.config.UserApplication        :24   [32m                  [0;39m 测试地址：http://127.0.0.1:8001/user-service/hello
+2023-10-09 11:46:55.224 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.0.Final
+2023-10-09 11:46:55.258 INFO  top.chen.share.user.config.UserApplication        :51   [32m                  [0;39m Starting UserApplication using Java 17.0.4.1 with PID 20212 (D:\program\share-api\share-user\target\classes started by ChenQi in D:\program\share-api)
+2023-10-09 11:46:55.259 INFO  top.chen.share.user.config.UserApplication        :630  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-10-09 11:46:56.089 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m                  [0;39m Tomcat initialized with port(s): 8001 (http)
+2023-10-09 11:46:56.097 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Initializing ProtocolHandler ["http-nio-8001"]
+2023-10-09 11:46:56.098 INFO  org.apache.catalina.core.StandardService          :173  [32m                  [0;39m Starting service [Tomcat]
+2023-10-09 11:46:56.098 INFO  org.apache.catalina.core.StandardEngine           :173  [32m                  [0;39m Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-10-09 11:46:56.152 INFO  o.a.c.c.C.[Tomcat].[localhost].[/user-service]    :173  [32m                  [0;39m Initializing Spring embedded WebApplicationContext
+2023-10-09 11:46:56.153 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :291  [32m                  [0;39m Root WebApplicationContext: initialization completed in 861 ms
+2023-10-09 11:46:56.407 INFO  top.chen.share.common.aspect.LogAspect            :32   [32m                  [0;39m logAspect
+2023-10-09 11:46:56.689 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m                  [0;39m Starting ProtocolHandler ["http-nio-8001"]
+2023-10-09 11:46:56.702 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m                  [0;39m Tomcat started on port(s): 8001 (http) with context path '/user-service'
+2023-10-09 11:46:56.709 INFO  top.chen.share.user.config.UserApplication        :57   [32m                  [0;39m Started UserApplication in 1.864 seconds (process running for 2.259)
+2023-10-09 11:46:56.710 INFO  top.chen.share.user.config.UserApplication        :23   [32m                  [0;39m 启动成功！！
+2023-10-09 11:46:56.711 INFO  top.chen.share.user.config.UserApplication        :24   [32m                  [0;39m 测试地址：http://127.0.0.1:8001/user-service/hello
+2023-10-09 12:15:39.813 INFO  o.a.c.c.C.[Tomcat].[localhost].[/user-service]    :173  [32m                  [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-09 12:15:39.814 INFO  org.springframework.web.servlet.DispatcherServlet :532  [32m                  [0;39m Initializing Servlet 'dispatcherServlet'
+2023-10-09 12:15:39.815 INFO  org.springframework.web.servlet.DispatcherServlet :554  [32m                  [0;39m Completed initialization in 1 ms
+2023-10-09 12:15:39.942 INFO  top.chen.share.common.aspect.LogAspect            :55   [32m1696824939832njy  [0;39m --------------------开始--------------------
+2023-10-09 12:15:39.944 INFO  top.chen.share.common.aspect.LogAspect            :56   [32m1696824939832njy  [0;39m 请求地址：http://127.0.0.1:8001/user-service/user/login POST
+2023-10-09 12:15:39.944 INFO  top.chen.share.common.aspect.LogAspect            :57   [32m1696824939832njy  [0;39m 类名方法：top.chen.share.user.controller.UserController,login
+2023-10-09 12:15:39.944 INFO  top.chen.share.common.aspect.LogAspect            :58   [32m1696824939832njy  [0;39m 远程地址：127.0.0.1
+2023-10-09 12:15:40.011 INFO  top.chen.share.common.aspect.LogAspect            :79   [32m1696824939832njy  [0;39m 请求参数：[{}]
+2023-10-09 12:15:40.055 WARN  c.b.m.core.toolkit.support.ReflectLambdaMeta      :41   [32m1696824939832njy  [0;39m Unable to make field private final java.lang.Class java.lang.invoke.SerializedLambda.capturingClass accessible: module java.base does not "opens java.lang.invoke" to unnamed module @3270d194
+2023-10-09 12:15:40.073 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32m1696824939832njy  [0;39m HikariPool-1 - Starting...
+2023-10-09 12:15:40.406 INFO  com.zaxxer.hikari.pool.HikariPool                 :565  [32m1696824939832njy  [0;39m HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@35aae4ee
+2023-10-09 12:15:40.408 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32m1696824939832njy  [0;39m HikariPool-1 - Start completed.
+2023-10-09 12:15:40.419 DEBUG top.chen.share.user.mapper.UserMapper.selectList  :137  [32m1696824939832njy  [0;39m ==>  Preparing: SELECT id,phone,password,nickname,roles,avatar_url,bonus,create_time,update_time FROM user WHERE (phone = ?)
+2023-10-09 12:15:40.444 DEBUG top.chen.share.user.mapper.UserMapper.selectList  :137  [32m1696824939832njy  [0;39m ==> Parameters: 13951905171(String)
+2023-10-09 12:15:40.467 DEBUG top.chen.share.user.mapper.UserMapper.selectList  :137  [32m1696824939832njy  [0;39m <==      Total: 1
+2023-10-09 12:15:40.548 INFO  top.chen.share.common.util.JwtUtil                :42   [32m1696824939832njy  [0;39m 生成 JWT token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTY4MjQ5NDAsInBob25lIjoiMTM5NTE5MDUxNzEiLCJpZCI6MSwiZXhwIjoxNjk2OTk3NzQwLCJpYXQiOjE2OTY4MjQ5NDB9.7cbcMtWW_Fg8b5p0CMfjZkbe7jiVRMVojo4CWyiIu08
+2023-10-09 12:15:40.556 INFO  top.chen.share.common.aspect.LogAspect            :91   [32m1696824939832njy  [0;39m 返回结果：{"data":{"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTY4MjQ5NDAsInBob25lIjoiMTM5NTE5MDUxNzEiLCJpZCI6MSwiZXhwIjoxNjk2OTk3NzQwLCJpYXQiOjE2OTY4MjQ5NDB9.7cbcMtWW_Fg8b5p0CMfjZkbe7jiVRMVojo4CWyiIu08","user":{"avatarUrl":"https://i2.100024.xyz/2023/01/26/3e727b.webp","bonus":620,"createTime":1694838230000,"id":1,"nickname":"ccen","roles":"admin","updateTime":1694852630000}},"success":true}
+2023-10-09 12:15:40.556 INFO  top.chen.share.common.aspect.LogAspect            :92   [32m1696824939832njy  [0;39m --------------------结束 耗时：615 ms --------------------
+2023-10-09 12:17:46.843 INFO  top.chen.share.common.aspect.LogAspect            :55   [32m1696825066842k03  [0;39m --------------------开始--------------------
+2023-10-09 12:17:46.844 INFO  top.chen.share.common.aspect.LogAspect            :56   [32m1696825066842k03  [0;39m 请求地址：http://127.0.0.1:8001/user-service/user/login POST
+2023-10-09 12:17:46.844 INFO  top.chen.share.common.aspect.LogAspect            :57   [32m1696825066842k03  [0;39m 类名方法：top.chen.share.user.controller.UserController,login
+2023-10-09 12:17:46.844 INFO  top.chen.share.common.aspect.LogAspect            :58   [32m1696825066842k03  [0;39m 远程地址：127.0.0.1
+2023-10-09 12:17:46.844 INFO  top.chen.share.common.aspect.LogAspect            :79   [32m1696825066842k03  [0;39m 请求参数：[{}]
+2023-10-09 12:17:46.846 DEBUG top.chen.share.user.mapper.UserMapper.selectList  :137  [32m1696825066842k03  [0;39m ==>  Preparing: SELECT id,phone,password,nickname,roles,avatar_url,bonus,create_time,update_time FROM user WHERE (phone = ?)
+2023-10-09 12:17:46.846 DEBUG top.chen.share.user.mapper.UserMapper.selectList  :137  [32m1696825066842k03  [0;39m ==> Parameters: 13951905171(String)
+2023-10-09 12:17:46.848 DEBUG top.chen.share.user.mapper.UserMapper.selectList  :137  [32m1696825066842k03  [0;39m <==      Total: 1
+2023-10-09 12:17:46.849 INFO  top.chen.share.common.util.JwtUtil                :42   [32m1696825066842k03  [0;39m 生成 JWT token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTY4MjUwNjYsInBob25lIjoiMTM5NTE5MDUxNzEiLCJpZCI6MSwiZXhwIjoxNjk2OTk3ODY2LCJpYXQiOjE2OTY4MjUwNjZ9.ToKegLJYvXVHqMDCHsfmRVG6-RDMHTNVz8Zp_MkmlHQ
+2023-10-09 12:17:46.849 INFO  top.chen.share.common.aspect.LogAspect            :91   [32m1696825066842k03  [0;39m 返回结果：{"data":{"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTY4MjUwNjYsInBob25lIjoiMTM5NTE5MDUxNzEiLCJpZCI6MSwiZXhwIjoxNjk2OTk3ODY2LCJpYXQiOjE2OTY4MjUwNjZ9.ToKegLJYvXVHqMDCHsfmRVG6-RDMHTNVz8Zp_MkmlHQ","user":{"avatarUrl":"https://i2.100024.xyz/2023/01/26/3e727b.webp","bonus":620,"createTime":1694838230000,"id":1,"nickname":"ccen","roles":"admin","updateTime":1694852630000}},"success":true}
+2023-10-09 12:17:46.849 INFO  top.chen.share.common.aspect.LogAspect            :92   [32m1696825066842k03  [0;39m --------------------结束 耗时：6 ms --------------------
+2023-10-09 12:18:04.145 INFO  top.chen.share.common.aspect.LogAspect            :55   [32m1696825084145a99  [0;39m --------------------开始--------------------
+2023-10-09 12:18:04.145 INFO  top.chen.share.common.aspect.LogAspect            :56   [32m1696825084145a99  [0;39m 请求地址：http://127.0.0.1:8001/user-service/user/login POST
+2023-10-09 12:18:04.147 INFO  top.chen.share.common.aspect.LogAspect            :57   [32m1696825084145a99  [0;39m 类名方法：top.chen.share.user.controller.UserController,login
+2023-10-09 12:18:04.147 INFO  top.chen.share.common.aspect.LogAspect            :58   [32m1696825084145a99  [0;39m 远程地址：127.0.0.1
+2023-10-09 12:18:04.147 INFO  top.chen.share.common.aspect.LogAspect            :79   [32m1696825084145a99  [0;39m 请求参数：[{}]
+2023-10-09 12:18:04.149 DEBUG top.chen.share.user.mapper.UserMapper.selectList  :137  [32m1696825084145a99  [0;39m ==>  Preparing: SELECT id,phone,password,nickname,roles,avatar_url,bonus,create_time,update_time FROM user WHERE (phone = ?)
+2023-10-09 12:18:04.149 DEBUG top.chen.share.user.mapper.UserMapper.selectList  :137  [32m1696825084145a99  [0;39m ==> Parameters: 13951905171(String)
+2023-10-09 12:18:04.151 DEBUG top.chen.share.user.mapper.UserMapper.selectList  :137  [32m1696825084145a99  [0;39m <==      Total: 1
+2023-10-09 12:18:04.152 INFO  top.chen.share.common.util.JwtUtil                :42   [32m1696825084145a99  [0;39m 生成 JWT token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTY4MjUwODQsInBob25lIjoiMTM5NTE5MDUxNzEiLCJpZCI6MSwiZXhwIjoxNjk2OTk3ODg0LCJpYXQiOjE2OTY4MjUwODR9.yuUkseTRj_jXKwvApEa1V2Kl6s3V390kn0a_K8Omvnc
+2023-10-09 12:18:04.152 INFO  top.chen.share.common.aspect.LogAspect            :91   [32m1696825084145a99  [0;39m 返回结果：{"data":{"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTY4MjUwODQsInBob25lIjoiMTM5NTE5MDUxNzEiLCJpZCI6MSwiZXhwIjoxNjk2OTk3ODg0LCJpYXQiOjE2OTY4MjUwODR9.yuUkseTRj_jXKwvApEa1V2Kl6s3V390kn0a_K8Omvnc","user":{"avatarUrl":"https://i2.100024.xyz/2023/01/26/3e727b.webp","bonus":620,"createTime":1694838230000,"id":1,"nickname":"ccen","roles":"admin","updateTime":1694852630000}},"success":true}
+2023-10-09 12:18:04.152 INFO  top.chen.share.common.aspect.LogAspect            :92   [32m1696825084145a99  [0;39m --------------------结束 耗时：7 ms --------------------
+2023-10-09 12:18:54.298 INFO  top.chen.share.common.aspect.LogAspect            :55   [32m1696825134297ruz  [0;39m --------------------开始--------------------
+2023-10-09 12:18:54.298 INFO  top.chen.share.common.aspect.LogAspect            :56   [32m1696825134297ruz  [0;39m 请求地址：http://127.0.0.1:8001/user-service/user/login POST
+2023-10-09 12:18:54.299 INFO  top.chen.share.common.aspect.LogAspect            :57   [32m1696825134297ruz  [0;39m 类名方法：top.chen.share.user.controller.UserController,login
+2023-10-09 12:18:54.299 INFO  top.chen.share.common.aspect.LogAspect            :58   [32m1696825134297ruz  [0;39m 远程地址：127.0.0.1
+2023-10-09 12:18:54.299 INFO  top.chen.share.common.aspect.LogAspect            :79   [32m1696825134297ruz  [0;39m 请求参数：[{}]
+2023-10-09 12:18:54.302 DEBUG top.chen.share.user.mapper.UserMapper.selectList  :137  [32m1696825134297ruz  [0;39m ==>  Preparing: SELECT id,phone,password,nickname,roles,avatar_url,bonus,create_time,update_time FROM user WHERE (phone = ?)
+2023-10-09 12:18:54.302 DEBUG top.chen.share.user.mapper.UserMapper.selectList  :137  [32m1696825134297ruz  [0;39m ==> Parameters: 13951905171(String)
+2023-10-09 12:18:54.304 DEBUG top.chen.share.user.mapper.UserMapper.selectList  :137  [32m1696825134297ruz  [0;39m <==      Total: 1
+2023-10-09 12:18:54.305 INFO  top.chen.share.common.util.JwtUtil                :42   [32m1696825134297ruz  [0;39m 生成 JWT token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTY4MjUxMzQsInBob25lIjoiMTM5NTE5MDUxNzEiLCJpZCI6MSwiZXhwIjoxNjk2OTk3OTM0LCJpYXQiOjE2OTY4MjUxMzR9.k4IIkJWKBUyQ_cCibDZoA8u-uVyxehNJpnjeIsv7jIU
+2023-10-09 12:18:54.305 INFO  top.chen.share.common.aspect.LogAspect            :91   [32m1696825134297ruz  [0;39m 返回结果：{"data":{"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTY4MjUxMzQsInBob25lIjoiMTM5NTE5MDUxNzEiLCJpZCI6MSwiZXhwIjoxNjk2OTk3OTM0LCJpYXQiOjE2OTY4MjUxMzR9.k4IIkJWKBUyQ_cCibDZoA8u-uVyxehNJpnjeIsv7jIU","user":{"avatarUrl":"https://i2.100024.xyz/2023/01/26/3e727b.webp","bonus":620,"createTime":1694838230000,"id":1,"nickname":"ccen","roles":"admin","updateTime":1694852630000}},"success":true}
+2023-10-09 12:18:54.305 INFO  top.chen.share.common.aspect.LogAspect            :92   [32m1696825134297ruz  [0;39m --------------------结束 耗时：7 ms --------------------
+2023-10-09 12:19:06.814 INFO  top.chen.share.common.aspect.LogAspect            :55   [32m1696825146813jip  [0;39m --------------------开始--------------------
+2023-10-09 12:19:06.815 INFO  top.chen.share.common.aspect.LogAspect            :56   [32m1696825146813jip  [0;39m 请求地址：http://127.0.0.1:8001/user-service/user/login POST
+2023-10-09 12:19:06.815 INFO  top.chen.share.common.aspect.LogAspect            :57   [32m1696825146813jip  [0;39m 类名方法：top.chen.share.user.controller.UserController,login
+2023-10-09 12:19:06.815 INFO  top.chen.share.common.aspect.LogAspect            :58   [32m1696825146813jip  [0;39m 远程地址：127.0.0.1
+2023-10-09 12:19:06.815 INFO  top.chen.share.common.aspect.LogAspect            :79   [32m1696825146813jip  [0;39m 请求参数：[{}]
+2023-10-09 12:19:06.817 DEBUG top.chen.share.user.mapper.UserMapper.selectList  :137  [32m1696825146813jip  [0;39m ==>  Preparing: SELECT id,phone,password,nickname,roles,avatar_url,bonus,create_time,update_time FROM user WHERE (phone = ?)
+2023-10-09 12:19:06.817 DEBUG top.chen.share.user.mapper.UserMapper.selectList  :137  [32m1696825146813jip  [0;39m ==> Parameters: 13951905171(String)
+2023-10-09 12:19:06.819 DEBUG top.chen.share.user.mapper.UserMapper.selectList  :137  [32m1696825146813jip  [0;39m <==      Total: 1
+2023-10-09 12:19:06.819 INFO  top.chen.share.common.util.JwtUtil                :42   [32m1696825146813jip  [0;39m 生成 JWT token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTY4MjUxNDYsInBob25lIjoiMTM5NTE5MDUxNzEiLCJpZCI6MSwiZXhwIjoxNjk2OTk3OTQ2LCJpYXQiOjE2OTY4MjUxNDZ9.rgEkBt8nhuG_im4k8pTmgg7sHh667eqNe9j_ka6Jtro
+2023-10-09 12:19:06.820 INFO  top.chen.share.common.aspect.LogAspect            :91   [32m1696825146813jip  [0;39m 返回结果：{"data":{"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTY4MjUxNDYsInBob25lIjoiMTM5NTE5MDUxNzEiLCJpZCI6MSwiZXhwIjoxNjk2OTk3OTQ2LCJpYXQiOjE2OTY4MjUxNDZ9.rgEkBt8nhuG_im4k8pTmgg7sHh667eqNe9j_ka6Jtro","user":{"avatarUrl":"https://i2.100024.xyz/2023/01/26/3e727b.webp","bonus":620,"createTime":1694838230000,"id":1,"nickname":"ccen","roles":"admin","updateTime":1694852630000}},"success":true}
+2023-10-09 12:19:06.820 INFO  top.chen.share.common.aspect.LogAspect            :92   [32m1696825146813jip  [0;39m --------------------结束 耗时：6 ms --------------------
+2023-10-09 12:19:33.608 INFO  top.chen.share.common.aspect.LogAspect            :55   [32m1696825173607wex  [0;39m --------------------开始--------------------
+2023-10-09 12:19:33.608 INFO  top.chen.share.common.aspect.LogAspect            :56   [32m1696825173607wex  [0;39m 请求地址：http://127.0.0.1:8001/user-service/user/login POST
+2023-10-09 12:19:33.609 INFO  top.chen.share.common.aspect.LogAspect            :57   [32m1696825173607wex  [0;39m 类名方法：top.chen.share.user.controller.UserController,login
+2023-10-09 12:19:33.609 INFO  top.chen.share.common.aspect.LogAspect            :58   [32m1696825173607wex  [0;39m 远程地址：127.0.0.1
+2023-10-09 12:19:33.609 INFO  top.chen.share.common.aspect.LogAspect            :79   [32m1696825173607wex  [0;39m 请求参数：[{}]
+2023-10-09 12:19:33.611 DEBUG top.chen.share.user.mapper.UserMapper.selectList  :137  [32m1696825173607wex  [0;39m ==>  Preparing: SELECT id,phone,password,nickname,roles,avatar_url,bonus,create_time,update_time FROM user WHERE (phone = ?)
+2023-10-09 12:19:33.611 DEBUG top.chen.share.user.mapper.UserMapper.selectList  :137  [32m1696825173607wex  [0;39m ==> Parameters: 13951905171(String)
+2023-10-09 12:19:33.613 DEBUG top.chen.share.user.mapper.UserMapper.selectList  :137  [32m1696825173607wex  [0;39m <==      Total: 1
+2023-10-09 12:19:33.614 INFO  top.chen.share.common.util.JwtUtil                :42   [32m1696825173607wex  [0;39m 生成 JWT token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTY4MjUxNzMsInBob25lIjoiMTM5NTE5MDUxNzEiLCJpZCI6MSwiZXhwIjoxNjk2OTk3OTczLCJpYXQiOjE2OTY4MjUxNzN9.saPN8iOD0RJU3brmtbNZHq90udGdMyDS4nB40jprAcI
+2023-10-09 12:19:33.614 INFO  top.chen.share.common.aspect.LogAspect            :91   [32m1696825173607wex  [0;39m 返回结果：{"data":{"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTY4MjUxNzMsInBob25lIjoiMTM5NTE5MDUxNzEiLCJpZCI6MSwiZXhwIjoxNjk2OTk3OTczLCJpYXQiOjE2OTY4MjUxNzN9.saPN8iOD0RJU3brmtbNZHq90udGdMyDS4nB40jprAcI","user":{"avatarUrl":"https://i2.100024.xyz/2023/01/26/3e727b.webp","bonus":620,"createTime":1694838230000,"id":1,"nickname":"ccen","roles":"admin","updateTime":1694852630000}},"success":true}
+2023-10-09 12:19:33.614 INFO  top.chen.share.common.aspect.LogAspect            :92   [32m1696825173607wex  [0;39m --------------------结束 耗时：6 ms --------------------
+2023-10-09 12:22:58.660 INFO  top.chen.share.common.aspect.LogAspect            :55   [32m1696825378659hwk  [0;39m --------------------开始--------------------
+2023-10-09 12:22:58.661 INFO  top.chen.share.common.aspect.LogAspect            :56   [32m1696825378659hwk  [0;39m 请求地址：http://127.0.0.1:8001/user-service/user/login POST
+2023-10-09 12:22:58.662 INFO  top.chen.share.common.aspect.LogAspect            :57   [32m1696825378659hwk  [0;39m 类名方法：top.chen.share.user.controller.UserController,login
+2023-10-09 12:22:58.668 INFO  top.chen.share.common.aspect.LogAspect            :58   [32m1696825378659hwk  [0;39m 远程地址：127.0.0.1
+2023-10-09 12:22:58.668 INFO  top.chen.share.common.aspect.LogAspect            :79   [32m1696825378659hwk  [0;39m 请求参数：[{}]
+2023-10-09 12:22:58.670 DEBUG top.chen.share.user.mapper.UserMapper.selectList  :137  [32m1696825378659hwk  [0;39m ==>  Preparing: SELECT id,phone,password,nickname,roles,avatar_url,bonus,create_time,update_time FROM user WHERE (phone = ?)
+2023-10-09 12:22:58.670 DEBUG top.chen.share.user.mapper.UserMapper.selectList  :137  [32m1696825378659hwk  [0;39m ==> Parameters: 13951905171(String)
+2023-10-09 12:22:58.680 DEBUG top.chen.share.user.mapper.UserMapper.selectList  :137  [32m1696825378659hwk  [0;39m <==      Total: 1
+2023-10-09 12:22:58.681 INFO  top.chen.share.common.util.JwtUtil                :42   [32m1696825378659hwk  [0;39m 生成 JWT token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTY4MjUzNzgsInBob25lIjoiMTM5NTE5MDUxNzEiLCJpZCI6MSwiZXhwIjoxNjk2OTk4MTc4LCJpYXQiOjE2OTY4MjUzNzh9.xbjeg_ecjnfihCfejLTCBkOJ-V0Pc9F9eQKBlSxRlh4
+2023-10-09 12:22:58.681 INFO  top.chen.share.common.aspect.LogAspect            :91   [32m1696825378659hwk  [0;39m 返回结果：{"data":{"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTY4MjUzNzgsInBob25lIjoiMTM5NTE5MDUxNzEiLCJpZCI6MSwiZXhwIjoxNjk2OTk4MTc4LCJpYXQiOjE2OTY4MjUzNzh9.xbjeg_ecjnfihCfejLTCBkOJ-V0Pc9F9eQKBlSxRlh4","user":{"avatarUrl":"https://i2.100024.xyz/2023/01/26/3e727b.webp","bonus":620,"createTime":1694838230000,"id":1,"nickname":"ccen","roles":"admin","updateTime":1694852630000}},"success":true}
+2023-10-09 12:22:58.681 INFO  top.chen.share.common.aspect.LogAspect            :92   [32m1696825378659hwk  [0;39m --------------------结束 耗时：21 ms --------------------
+2023-10-09 12:23:26.845 INFO  top.chen.share.common.aspect.LogAspect            :55   [32m1696825406845jul  [0;39m --------------------开始--------------------
+2023-10-09 12:23:26.846 INFO  top.chen.share.common.aspect.LogAspect            :56   [32m1696825406845jul  [0;39m 请求地址：http://127.0.0.1:8001/user-service/user/login POST
+2023-10-09 12:23:26.846 INFO  top.chen.share.common.aspect.LogAspect            :57   [32m1696825406845jul  [0;39m 类名方法：top.chen.share.user.controller.UserController,login
+2023-10-09 12:23:26.846 INFO  top.chen.share.common.aspect.LogAspect            :58   [32m1696825406845jul  [0;39m 远程地址：127.0.0.1
+2023-10-09 12:23:26.846 INFO  top.chen.share.common.aspect.LogAspect            :79   [32m1696825406845jul  [0;39m 请求参数：[{}]
+2023-10-09 12:23:26.848 DEBUG top.chen.share.user.mapper.UserMapper.selectList  :137  [32m1696825406845jul  [0;39m ==>  Preparing: SELECT id,phone,password,nickname,roles,avatar_url,bonus,create_time,update_time FROM user WHERE (phone = ?)
+2023-10-09 12:23:26.849 DEBUG top.chen.share.user.mapper.UserMapper.selectList  :137  [32m1696825406845jul  [0;39m ==> Parameters: 13951905171(String)
+2023-10-09 12:23:26.851 DEBUG top.chen.share.user.mapper.UserMapper.selectList  :137  [32m1696825406845jul  [0;39m <==      Total: 1
+2023-10-09 12:23:26.852 INFO  top.chen.share.common.util.JwtUtil                :42   [32m1696825406845jul  [0;39m 生成 JWT token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTY4MjU0MDYsInBob25lIjoiMTM5NTE5MDUxNzEiLCJpZCI6MSwiZXhwIjoxNjk2OTk4MjA2LCJpYXQiOjE2OTY4MjU0MDZ9.jTsXIp82rn2V1x5qdtRBhAEmSUvgoOJsISJ2GJOOGGo
+2023-10-09 12:23:26.852 INFO  top.chen.share.common.aspect.LogAspect            :91   [32m1696825406845jul  [0;39m 返回结果：{"data":{"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTY4MjU0MDYsInBob25lIjoiMTM5NTE5MDUxNzEiLCJpZCI6MSwiZXhwIjoxNjk2OTk4MjA2LCJpYXQiOjE2OTY4MjU0MDZ9.jTsXIp82rn2V1x5qdtRBhAEmSUvgoOJsISJ2GJOOGGo","user":{"avatarUrl":"https://i2.100024.xyz/2023/01/26/3e727b.webp","bonus":620,"createTime":1694838230000,"id":1,"nickname":"ccen","roles":"admin","updateTime":1694852630000}},"success":true}
+2023-10-09 12:23:26.852 INFO  top.chen.share.common.aspect.LogAspect            :92   [32m1696825406845jul  [0;39m --------------------结束 耗时：7 ms --------------------
+2023-10-09 12:24:20.814 INFO  top.chen.share.common.aspect.LogAspect            :55   [32m1696825460814tsc  [0;39m --------------------开始--------------------
+2023-10-09 12:24:20.815 INFO  top.chen.share.common.aspect.LogAspect            :56   [32m1696825460814tsc  [0;39m 请求地址：http://127.0.0.1:8001/user-service/user/login POST
+2023-10-09 12:24:20.815 INFO  top.chen.share.common.aspect.LogAspect            :57   [32m1696825460814tsc  [0;39m 类名方法：top.chen.share.user.controller.UserController,login
+2023-10-09 12:24:20.815 INFO  top.chen.share.common.aspect.LogAspect            :58   [32m1696825460814tsc  [0;39m 远程地址：127.0.0.1
+2023-10-09 12:24:20.815 INFO  top.chen.share.common.aspect.LogAspect            :79   [32m1696825460814tsc  [0;39m 请求参数：[{}]
+2023-10-09 12:24:20.817 DEBUG top.chen.share.user.mapper.UserMapper.selectList  :137  [32m1696825460814tsc  [0;39m ==>  Preparing: SELECT id,phone,password,nickname,roles,avatar_url,bonus,create_time,update_time FROM user WHERE (phone = ?)
+2023-10-09 12:24:20.817 DEBUG top.chen.share.user.mapper.UserMapper.selectList  :137  [32m1696825460814tsc  [0;39m ==> Parameters: 13951905171(String)
+2023-10-09 12:24:20.819 DEBUG top.chen.share.user.mapper.UserMapper.selectList  :137  [32m1696825460814tsc  [0;39m <==      Total: 1
+2023-10-09 12:24:20.821 INFO  top.chen.share.common.util.JwtUtil                :42   [32m1696825460814tsc  [0;39m 生成 JWT token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTY4MjU0NjAsInBob25lIjoiMTM5NTE5MDUxNzEiLCJpZCI6MSwiZXhwIjoxNjk2OTk4MjYwLCJpYXQiOjE2OTY4MjU0NjB9.VkmN-jmqSefRPIi22mBtHP-u_Z2YK5CoRH91NvkwQh4
+2023-10-09 12:24:20.821 INFO  top.chen.share.common.aspect.LogAspect            :91   [32m1696825460814tsc  [0;39m 返回结果：{"data":{"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTY4MjU0NjAsInBob25lIjoiMTM5NTE5MDUxNzEiLCJpZCI6MSwiZXhwIjoxNjk2OTk4MjYwLCJpYXQiOjE2OTY4MjU0NjB9.VkmN-jmqSefRPIi22mBtHP-u_Z2YK5CoRH91NvkwQh4","user":{"avatarUrl":"https://i2.100024.xyz/2023/01/26/3e727b.webp","bonus":620,"createTime":1694838230000,"id":1,"nickname":"ccen","roles":"admin","updateTime":1694852630000}},"success":true}
+2023-10-09 12:24:20.821 INFO  top.chen.share.common.aspect.LogAspect            :92   [32m1696825460814tsc  [0;39m --------------------结束 耗时：7 ms --------------------
+2023-10-09 12:25:03.964 INFO  top.chen.share.common.aspect.LogAspect            :55   [32m1696825503964nq4  [0;39m --------------------开始--------------------
+2023-10-09 12:25:03.965 INFO  top.chen.share.common.aspect.LogAspect            :56   [32m1696825503964nq4  [0;39m 请求地址：http://127.0.0.1:8001/user-service/user/login POST
+2023-10-09 12:25:03.965 INFO  top.chen.share.common.aspect.LogAspect            :57   [32m1696825503964nq4  [0;39m 类名方法：top.chen.share.user.controller.UserController,login
+2023-10-09 12:25:03.965 INFO  top.chen.share.common.aspect.LogAspect            :58   [32m1696825503964nq4  [0;39m 远程地址：127.0.0.1
+2023-10-09 12:25:03.965 INFO  top.chen.share.common.aspect.LogAspect            :79   [32m1696825503964nq4  [0;39m 请求参数：[{}]
+2023-10-09 12:25:03.967 DEBUG top.chen.share.user.mapper.UserMapper.selectList  :137  [32m1696825503964nq4  [0;39m ==>  Preparing: SELECT id,phone,password,nickname,roles,avatar_url,bonus,create_time,update_time FROM user WHERE (phone = ?)
+2023-10-09 12:25:03.967 DEBUG top.chen.share.user.mapper.UserMapper.selectList  :137  [32m1696825503964nq4  [0;39m ==> Parameters: 13951905171(String)
+2023-10-09 12:25:03.969 DEBUG top.chen.share.user.mapper.UserMapper.selectList  :137  [32m1696825503964nq4  [0;39m <==      Total: 1
+2023-10-09 12:25:03.971 INFO  top.chen.share.common.util.JwtUtil                :42   [32m1696825503964nq4  [0;39m 生成 JWT token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTY4MjU1MDMsInBob25lIjoiMTM5NTE5MDUxNzEiLCJpZCI6MSwiZXhwIjoxNjk2OTk4MzAzLCJpYXQiOjE2OTY4MjU1MDN9.O6ekUaoVApvMzPmYSw9Odxmsa-4vsXsCDYU4VK_HzlI
+2023-10-09 12:25:03.972 INFO  top.chen.share.common.aspect.LogAspect            :91   [32m1696825503964nq4  [0;39m 返回结果：{"data":{"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTY4MjU1MDMsInBob25lIjoiMTM5NTE5MDUxNzEiLCJpZCI6MSwiZXhwIjoxNjk2OTk4MzAzLCJpYXQiOjE2OTY4MjU1MDN9.O6ekUaoVApvMzPmYSw9Odxmsa-4vsXsCDYU4VK_HzlI","user":{"avatarUrl":"https://i2.100024.xyz/2023/01/26/3e727b.webp","bonus":620,"createTime":1694838230000,"id":1,"nickname":"ccen","roles":"admin","updateTime":1694852630000}},"success":true}
+2023-10-09 12:25:03.972 INFO  top.chen.share.common.aspect.LogAspect            :92   [32m1696825503964nq4  [0;39m --------------------结束 耗时：8 ms --------------------
+2023-10-09 12:25:38.916 INFO  top.chen.share.common.aspect.LogAspect            :55   [32m16968255389159wf  [0;39m --------------------开始--------------------
+2023-10-09 12:25:38.916 INFO  top.chen.share.common.aspect.LogAspect            :56   [32m16968255389159wf  [0;39m 请求地址：http://127.0.0.1:8001/user-service/user/login POST
+2023-10-09 12:25:38.916 INFO  top.chen.share.common.aspect.LogAspect            :57   [32m16968255389159wf  [0;39m 类名方法：top.chen.share.user.controller.UserController,login
+2023-10-09 12:25:38.916 INFO  top.chen.share.common.aspect.LogAspect            :58   [32m16968255389159wf  [0;39m 远程地址：127.0.0.1
+2023-10-09 12:25:38.917 INFO  top.chen.share.common.aspect.LogAspect            :79   [32m16968255389159wf  [0;39m 请求参数：[{}]
+2023-10-09 12:25:38.918 DEBUG top.chen.share.user.mapper.UserMapper.selectList  :137  [32m16968255389159wf  [0;39m ==>  Preparing: SELECT id,phone,password,nickname,roles,avatar_url,bonus,create_time,update_time FROM user WHERE (phone = ?)
+2023-10-09 12:25:38.918 DEBUG top.chen.share.user.mapper.UserMapper.selectList  :137  [32m16968255389159wf  [0;39m ==> Parameters: 13951905171(String)
+2023-10-09 12:25:38.919 DEBUG top.chen.share.user.mapper.UserMapper.selectList  :137  [32m16968255389159wf  [0;39m <==      Total: 1
+2023-10-09 12:25:38.920 INFO  top.chen.share.common.util.JwtUtil                :42   [32m16968255389159wf  [0;39m 生成 JWT token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTY4MjU1MzgsInBob25lIjoiMTM5NTE5MDUxNzEiLCJpZCI6MSwiZXhwIjoxNjk2OTk4MzM4LCJpYXQiOjE2OTY4MjU1Mzh9.Ji3QkhRM54amIo6cbIEhDNaEPMjH2KGvrvXuFRk597Y
+2023-10-09 12:25:38.920 INFO  top.chen.share.common.aspect.LogAspect            :91   [32m16968255389159wf  [0;39m 返回结果：{"data":{"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTY4MjU1MzgsInBob25lIjoiMTM5NTE5MDUxNzEiLCJpZCI6MSwiZXhwIjoxNjk2OTk4MzM4LCJpYXQiOjE2OTY4MjU1Mzh9.Ji3QkhRM54amIo6cbIEhDNaEPMjH2KGvrvXuFRk597Y","user":{"avatarUrl":"https://i2.100024.xyz/2023/01/26/3e727b.webp","bonus":620,"createTime":1694838230000,"id":1,"nickname":"ccen","roles":"admin","updateTime":1694852630000}},"success":true}
+2023-10-09 12:25:38.920 INFO  top.chen.share.common.aspect.LogAspect            :92   [32m16968255389159wf  [0;39m --------------------结束 耗时：4 ms --------------------
+2023-10-09 12:26:57.971 INFO  top.chen.share.common.aspect.LogAspect            :55   [32m1696825617970kal  [0;39m --------------------开始--------------------
+2023-10-09 12:26:57.971 INFO  top.chen.share.common.aspect.LogAspect            :56   [32m1696825617970kal  [0;39m 请求地址：http://127.0.0.1:8001/user-service/user/login POST
+2023-10-09 12:26:57.971 INFO  top.chen.share.common.aspect.LogAspect            :57   [32m1696825617970kal  [0;39m 类名方法：top.chen.share.user.controller.UserController,login
+2023-10-09 12:26:57.971 INFO  top.chen.share.common.aspect.LogAspect            :58   [32m1696825617970kal  [0;39m 远程地址：127.0.0.1
+2023-10-09 12:26:57.972 INFO  top.chen.share.common.aspect.LogAspect            :79   [32m1696825617970kal  [0;39m 请求参数：[{}]
+2023-10-09 12:26:57.974 DEBUG top.chen.share.user.mapper.UserMapper.selectList  :137  [32m1696825617970kal  [0;39m ==>  Preparing: SELECT id,phone,password,nickname,roles,avatar_url,bonus,create_time,update_time FROM user WHERE (phone = ?)
+2023-10-09 12:26:57.974 DEBUG top.chen.share.user.mapper.UserMapper.selectList  :137  [32m1696825617970kal  [0;39m ==> Parameters: 13951905171(String)
+2023-10-09 12:26:57.975 DEBUG top.chen.share.user.mapper.UserMapper.selectList  :137  [32m1696825617970kal  [0;39m <==      Total: 1
+2023-10-09 12:26:57.976 INFO  top.chen.share.common.util.JwtUtil                :42   [32m1696825617970kal  [0;39m 生成 JWT token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTY4MjU2MTcsInBob25lIjoiMTM5NTE5MDUxNzEiLCJpZCI6MSwiZXhwIjoxNjk2OTk4NDE3LCJpYXQiOjE2OTY4MjU2MTd9.JTNqQ9HLN6rGGz2ytNqJgsiGkS6gV8HBaY1FfQPozZc
+2023-10-09 12:26:57.977 INFO  top.chen.share.common.aspect.LogAspect            :91   [32m1696825617970kal  [0;39m 返回结果：{"data":{"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTY4MjU2MTcsInBob25lIjoiMTM5NTE5MDUxNzEiLCJpZCI6MSwiZXhwIjoxNjk2OTk4NDE3LCJpYXQiOjE2OTY4MjU2MTd9.JTNqQ9HLN6rGGz2ytNqJgsiGkS6gV8HBaY1FfQPozZc","user":{"avatarUrl":"https://i2.100024.xyz/2023/01/26/3e727b.webp","bonus":620,"createTime":1694838230000,"id":1,"nickname":"ccen","roles":"admin","updateTime":1694852630000}},"success":true}
+2023-10-09 12:26:57.977 INFO  top.chen.share.common.aspect.LogAspect            :92   [32m1696825617970kal  [0;39m --------------------结束 耗时：6 ms --------------------
+2023-10-09 12:27:17.615 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m                  [0;39m HikariPool-1 - Shutdown initiated...
+2023-10-09 12:27:17.631 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m                  [0;39m HikariPool-1 - Shutdown completed.
