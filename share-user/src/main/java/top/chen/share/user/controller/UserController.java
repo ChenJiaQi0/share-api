@@ -19,6 +19,14 @@ public class UserController {
     @Resource
     private UserService userService;
 
+    @GetMapping("/{id}")
+    public CommonResp<User> getUserById(@PathVariable Long id) {
+        User user = userService.findById(id);
+        CommonResp<User> commonResp = new CommonResp<>();
+        commonResp.setData(user);
+        return commonResp;
+    }
+
     @GetMapping("/count")
     public CommonResp<Long> count(){
         Long count = userService.count();

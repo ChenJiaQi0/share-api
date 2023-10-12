@@ -6,6 +6,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 import top.chen.share.common.resp.CommonResp;
 import top.chen.share.common.util.JwtUtil;
+import top.chen.share.content.domain.ShareResp.ShareResp;
 import top.chen.share.content.domain.entity.Notice;
 import top.chen.share.content.domain.entity.Share;
 import top.chen.share.content.service.NoticeService;
@@ -28,6 +29,14 @@ public class ShareController {
 
     // 定义每页最多的数据量，以防前端定义传递超大参数，造成页面数据量过大
     private final int MAX = 100;
+
+    @GetMapping("/{id}")
+    public CommonResp<ShareResp> getShareById(@PathVariable Long id) {
+        ShareResp shareResp = shareService.findById(id);
+        CommonResp<ShareResp> commonResp = new CommonResp<>();
+        commonResp.setData(shareResp);
+        return commonResp;
+    }
 
     @GetMapping("/notice")
     public CommonResp<Notice> getLatestNotice(){

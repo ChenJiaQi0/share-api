@@ -35,3 +35,6 @@ Content-Type: application/json
   "password": "8888"
 }
 ###
+
+GET http://localhost:8000/user-service/user/1
+token: {{token}}
